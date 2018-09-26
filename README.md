@@ -13,4 +13,13 @@ Update per minggunya akan di di update di file readme.md
 ---
 
 ### Penjelasan singkat web
-web ini dibuat untuk membantu orang-orang yang kesulitan mencari buku-buku atau e-book yang jarang ada di pasaran dengan menggunakan sistem online shop. dalam web ini terdapat juga forum jual beli (FJB) yang dapat digunakan oleh user sebagai sara untuk saling berbagi buku-buku yang sudah tidak dipakai. untuk meng-cover translator-translator lepas, disediakan juga tempat untuk berbagi buku yang diterjemahkannya dalam bentuk e-book. 
+web ini berfungsi sebagai tempat pencetakan buku online.
+
+### Latar Belakang
+mengetahui kesulitan dalam mencari buku yang jarang ada di Indonesia, kami membuat web untuk memberikan akses kepada orang-orang ke percetakan buku secara online agar mereka yang ingin membaca buku dalam bentuk fisik tetapi hanya bisa menemukan bentuk digitalnya(e-book) tidak kesulitan untuk mencetak buku yang diinginkannya.
+
+### Tujuan
+memudahkan orang-orang yang ingin mencetak e-book.
+
+### sasaran pengguna
+orang-orang yang memiliki e-book namun ingin mencetaknya menjadi buku.
