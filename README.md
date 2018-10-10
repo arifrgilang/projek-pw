@@ -80,16 +80,16 @@ Deskripsi: Berisi manager untuk pesanan, bisa di acc atau di decline. Jika sudah
 
 ---
 
-#Progress minggu ke 2
+# Progress minggu ke 2
 
-##Flow Web
+## Flow Web
 
 ![landingpage](https://raw.githubusercontent.com/arifrgilang/projek-pw/master/res-pic/Flowweb.jpg)
 
-##Implementasi HTML CSS
+## Implementasi HTML CSS
 
 File diletakkan di `application>views>landingpage`
 
-##Schema Database
+## Schema Database
 
 ![landingpage](https://raw.githubusercontent.com/arifrgilang/projek-pw/master/res-pic/schema.jpg)
