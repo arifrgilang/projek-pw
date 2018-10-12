@@ -1,34 +1,41 @@
+<!doctype html>
 <html>
 <head>
 	<title>POOKS</title>
-	<link href="homepage.css" type="text/css" rel="stylesheet" />
+	<meta name ="viewport" content="width=device=width, initial-scale=1, user-scalable=no">
+	<link href="cobahomepage.css" type="text/css" rel="stylesheet">
+	
 </head>
 <body>
+	<header>
 	<!--navbar-->
-	<nav>
-		<ul>
-			<li><a  href="#LOGO">LOGO</a></li>
-			<li><a  href="#OrderCheck">Order Check</a></li>
-			<li><a  href="#PriceList">Price List</a></li>
-			<li><a  href="#FAQ">FAQ</a></li>
-			<li><a  href="#Credit">Credit</a></li>
-			<li style="float: right" ><a class="active" href="#Print">Print E-Book Order</a></li>
-		<ul>
+	<nav id="menunav">
+	    <input type="checkbox" id="checkbox1" />
+	    <label for="checkbox1">
+			<ul class="menu bar">
+			  <li><a href="#">Order Check</a></li>
+			  <li><a href="#">Price List</a></li>
+			  <li><a href="#">FAQ</a></li>  
+			  <li><a href="#">Credit</a></li>
+			  <li><a href="#">Print E-Book Order</a></li> 
+			</ul>
+		<span class="toggle">☰</span>
+		</label>
 	</nav>
-
-	<!--section welcome-->
-	<div class="row">
-		<div class="column middle">
-			<h1>POOKS</h1>
-		</div>
-		<div class="column side">
-			<h2>KNOWLEDGE IS NEVER BE LIMIT</h2>
-			<h3>We support you to the next level</h3>
-			<button class="button" style="vertical-align:middle"><span>Sign up here </span></button>
-		</div>
+	</header>
+	<!--section-->
+	<div class="menu utama">
+	  	<h1>POOKS</h1>
+	  	<hr>
+	  	<h2>"KNOWLEDGE IS NEVER BE LIMIT"</h2>
+		<h3>We support you to the next level</h3>
+		<button class="button" style="vertical-align:middle"><span>Sign up here </span></button>
 	</div>
 
 	<!--section about us-->
+	<br>
+	<br>
+	<br>
 	<h2 align="center">The Team</h2>
 	<div class="grid-container">
 		<div><img src="pic_trulli.jpg">Felia Sri Indriyani</div>
@@ -40,5 +47,6 @@
 	<footer>
 			Copyright@2018
 	</footer>
+
 </body>
 </html>
