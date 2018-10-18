@@ -189,7 +189,8 @@ h3{
 	background-color: white;
 	padding: 10px;
 	margin-right: 1%;
-	margin-left: 1%; 
+	margin-left: 1%;
+	border-radius: 5px;
 }
 
 .grid-container > div {
@@ -197,6 +198,7 @@ h3{
    text-align: center;
    padding: 20px 0;
    font-size: 1.3vw;
+   border-radius: 5px;
 }
 
 footer{
