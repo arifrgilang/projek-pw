@@ -1,29 +1,3 @@
-<!doctype html>
-<html>
-<head>
-	<title>POOKS</title>
-	<meta name ="viewport" content="width=device=width, initial-scale=1, user-scalable=no">
-	<link href="pricepage.css" type="text/css" rel="stylesheet">
-	
-</head>
-<body>
-	<header>
-	<!--navbar-->
-	<nav id="menunav">
-	    <input type="checkbox" id="checkbox1" />
-	    <label for="checkbox1">
-			<ul class="menu bar">
-			  <li><a href="#">Order Check</a></li>
-			  <li><a href="#">Price List</a></li>
-			  <li><a href="#">FAQ</a></li>  
-			  <li><a href="#">Credit</a></li>
-			  <li><a href="#">Print E-Book Order</a></li> 
-			</ul>
-		<span class="toggle">☰</span>
-		</label>
-	</nav>
-	</header>
-
 	<!--section-->
 	<div class="menu utama">
 	  	<h1>Price List</h1>
@@ -49,7 +23,7 @@
 					<td>harga</td>
 				</tr>
 				<tr>
-					<td>hdd</td>
+					<td>hssd</td>
 					<td>harga</td>
 				</tr>
 			</table>
@@ -199,11 +173,3 @@
 			</table>
 		</div>
 	</div>
-
-		<!--footer-->
-	<footer>
-			Copyright@2018
-	</footer>
-
-</body>
-</html>
