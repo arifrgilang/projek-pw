@@ -12,11 +12,12 @@
 	    <input type="checkbox" id="checkbox1" />
 	    <label for="checkbox1">
 			<ul class="menu bar">
-			  <li><a href="#">Order Check</a></li>
+				<li><a href="#">Home</a></li>
 			  <li><a href="#">Price List</a></li>
 			  <li><a href="#">FAQ</a></li>  
 			  <li><a href="#">Credit</a></li>
-			  <li><a href="#">Print E-Book Order</a></li> 
+				<li><a href="#">Print E-Book Order</a></li>
+				<li><a href="#">Order Check</a></li> 
 			</ul>
 		<span class="toggle">☰</span>
 		</label>

@@ -23,7 +23,7 @@ nav#menunav .menu{
 	justify-content:space-around;
 	align-items:center;
 	list-style-type:none;
-	border-style: round;
+	/* border-style: round; */
 }
 
 nav#menunav .menu li a{
