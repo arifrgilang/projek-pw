@@ -141,7 +141,7 @@ h3{
     box-sizing: border-box;
 }
 
-.grid-container {
+.containerFAQ {
 	width: 70%;
 	float:center;
 	display: grid;
@@ -154,7 +154,7 @@ h3{
 	margin-bottom: 8%; 
 }
 
-.grid-container > div {
+.containerFAQ > div {
    background-color: white;
    color:#006666;
    text-align: left;
