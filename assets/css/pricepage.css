@@ -140,7 +140,7 @@ h3{
     box-sizing: border-box;
 }
 
-.grid-container {
+.containerprice {
 	width: 100%;
 	float:center;
 	display: grid;
@@ -152,7 +152,7 @@ h3{
 	margin-left: 1%; 
 }
 
-.grid-container1 {
+.containerprice1 {
 	width: 100%;
 	float:center;
 	display: grid;
@@ -165,7 +165,7 @@ h3{
 
 }
 
-.grid-container > div {
+.containerprice > div {
    background-color: #006666;
    text-align: center;
    padding: 20px 0;
@@ -173,7 +173,7 @@ h3{
    color : white;
 }
 
-.grid-container1 > div {
+.containerprice1 > div {
    background-color: #006666;
    text-align: center;
    padding: 20px 0;
