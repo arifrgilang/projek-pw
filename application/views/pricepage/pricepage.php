@@ -55,7 +55,7 @@
 	</div>
 
 	<h3 align="left">Letter List</h3>
-	<div class="grid-container1">
+	<div class="containerprice1">
 		<div>A4 kosong
 			<table>
 				<tr>
@@ -63,7 +63,7 @@
 					<td>harga</td>
 				</tr>
 				<tr>
-					<td>hdd</td>
+					<td>hssd</td>
 					<td>harga</td>
 				</tr>
 			</table>
@@ -92,84 +92,4 @@
 				</tr>
 			</table>
 		</div>
-	</div>
-
-	<h3 align="left">Letter List</h3>
-	<div class="grid-container1">
-		<div>A4 kosong
-			<table>
-				<tr>
-					<td>hvs</td>
-					<td>harga</td>
-				</tr>
-				<tr>
-					<td>hdd</td>
-					<td>harga</td>
-				</tr>
-			</table>
-		</div>
-		<div>A4 kosong
-			<table>
-				<tr>
-					<td>hvs</td>
-					<td>harga</td>
-				</tr>
-				<tr>
-					<td>hdd</td>
-					<td>harga</td>
-				</tr>
-			</table>
-		</div>
-		<div>A4 kosong
-			<table>
-				<tr>
-					<td>hvs</td>
-					<td>harga</td>
-				</tr>
-				<tr>
-					<td>hdd</td>
-					<td>harga</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-
-	<h3 align="left">Letter List</h3>
-	<div class="grid-container1">
-		<div>A4 kosong
-			<table>
-				<tr>
-					<td>hvs</td>
-					<td>harga</td>
-				</tr>
-				<tr>
-					<td>hdd</td>
-					<td>harga</td>
-				</tr>
-			</table>
-		</div>
-		<div>A4 kosong
-			<table>
-				<tr>
-					<td>hvs</td>
-					<td>harga</td>
-				</tr>
-				<tr>
-					<td>hdd</td>
-					<td>harga</td>
-				</tr>
-			</table>
-		</div>
-		<div>A4 kosong
-			<table>
-				<tr>
-					<td>hvs</td>
-					<td>harga</td>
-				</tr>
-				<tr>
-					<td>hdd</td>
-					<td>harga</td>
-				</tr>
-			</table>
-		</div>
-	</div>
+	</div>	 

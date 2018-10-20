@@ -11,7 +11,7 @@
 <br>
 <br>
 <h2 text-align="center">The Team</h2>
-<div class="grid-container">
+<div class="grid-container" id="nameCard">
 	<div>Felia Sri Indriyani</div>
 	<div>Arif Rizky Gilang</div>
 	<div>Fahmi Izzuddin</div>
