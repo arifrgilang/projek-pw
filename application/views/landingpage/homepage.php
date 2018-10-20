@@ -1,6 +1,6 @@
 <!--section-->
 <div class="menu utama">
-  	<h1>POOKS</h1>
+	<h1>POOKS</h1>
   	<hr>
   	<h2>"KNOWLEDGE IS NEVER BE LIMIT"</h2>
 	<h3>We support you to the next level</h3>
@@ -12,7 +12,7 @@
 <br>
 <h2 text-align="center">The Team</h2>
 <div class="grid-container">
-	<div><img src="pic_trulli.jpg">Felia Sri Indriyani</div>
-	<div><img src="pic_trulli.jpg">Arif Rizky Gilang</div>
-	<div><img src="pic_trulli.jpg">Fahmi Izzuddin</div>
+	<div>Felia Sri Indriyani</div>
+	<div>Arif Rizky Gilang</div>
+	<div>Fahmi Izzuddin</div>
 </div>

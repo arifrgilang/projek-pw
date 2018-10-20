@@ -1,3 +1,5 @@
+/* NAVIGATION BAR */
+
 body{
 	background: white;
 }
@@ -157,7 +159,7 @@ h1,h2,h3{
 }
 
 h1{
-	font-size:20vw;
+	font-size:8vw;
 }
 
 h2{
@@ -179,6 +181,10 @@ h3{
     box-sizing: border-box;
 }
 
+/***************************************************************************************/
+
+/* HOMEPAGE */
+
 .grid-container {
 	width: 100%;
 	display: grid;
@@ -197,16 +203,108 @@ h3{
    border-radius: 5px;
 }
 
+/***************************************************************************************/
+
+/* FAQ */
+
+.containerFAQ {
+	width: 70%;
+	float:center;
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 5%;
+	background-color: white;
+	padding: 10px;
+	margin-right: 1%;
+	margin-left: 15%;
+	margin-bottom: 8%; 
+}
+
+.containerFAQ > div {
+   background-color: white;
+   color:#006666;
+   text-align: left;
+   padding: 10px 0;
+   font-size: 1.5vw;
+   border-color: #006666;
+   border: solid;
+}
+
+/***************************************************************************************/
+
+/* PRICE LIST */
+
+.containerprice {
+	width: 100%;
+	float:center;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10%;
+	background-color: white;
+	padding: 10px;
+	margin-right: 1%;
+	margin-left: 1%; 
+}
+
+.containerprice1 {
+	width: 100%;
+	float:center;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10%;
+	background-color: white;
+	padding: 10px;
+	margin-right: 1%;
+	margin-left: 1%;
+
+}
+
+.containerprice > div {
+   background-color: #006666;
+   text-align: center;
+   padding: 20px 0;
+   font-size: 1.3vw;
+   color : white;
+}
+
+.containerprice1 > div {
+   background-color: #006666;
+   text-align: center;
+   padding: 20px 0;
+   font-size: 1.3vw;
+   padding: 0;
+   padding-top: 9px;
+   color : white;
+}
+
+table{
+	border-collapse: collapse;
+    width: 100%;
+    color: #006666;
+    margin: 0;
+    background-color: white;
+
+}
+
+tr,td{
+	margin: 10px;
+	border-color: white;
+	border: solid;
+	padding: 6px;
+}
+
+/***************************************************************************************/
+
+/* FOOTER */
+
 footer{
 	height:5%;
-    height:50px;
-    line-height:50px;
+    height:30px;
+    line-height:30px;
     background:#006666;
     color:white;
     text-align: center;
 	padding: 0px;
-    bottom:0px;
- 
-    width:100%; /*biar memenuhi layar*/
+	bottom:0px;
+    width:100%; biar memenuhi layar
 }
- 

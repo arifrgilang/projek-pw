@@ -4,9 +4,6 @@
 	<title>POOKS</title>
 	<meta name ="viewport" content="width=device=width, initial-scale=1, user-scalable=no">
 		<link href="<?php echo base_url("/assets/css/homepage.css")?>" type="text/css" rel="stylesheet">
-		<link href="<?php echo base_url("/assets/css/pricepage.css")?>" type="text/css" rel="stylesheet">
-		<link href="<?php echo base_url("/assets/css/faq.css")?>" type="text/css" rel="stylesheet">
-
 
 </head>
 <body>

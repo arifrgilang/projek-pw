@@ -15,7 +15,7 @@
 
 	<!--kertas-->
 	<h3 align="left">Letter List</h3>
-	<div class="grid-container1">
+	<div class="grid-container">
 		<div>A4 kosong
 			<table>
 				<tr>
