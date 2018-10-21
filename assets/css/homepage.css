@@ -281,6 +281,9 @@ h3{
    color : white;
 }
 
+.credit-pic{
+	width: 70%;	
+}
 
 /***************************************************************************************/
 
@@ -294,6 +297,6 @@ footer{
     color:white;
     text-align: center;
 	padding: 0px;
-	bottom:0px;
-    width:100%; biar memenuhi layar
+	bottom: 0;
+    width:100%;
 }

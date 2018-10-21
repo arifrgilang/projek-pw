@@ -6,13 +6,3 @@
 	<h3>We support you to the next level</h3>
 	<button class="button" style="vertical-align:middle"><span>Sign up here </span></button>
 </div>
-	<!--section about us-->
-<br>
-<br>
-<br>
-<h2 text-align="center">The Team</h2>
-<div class="grid-container" id="nameCard">
-	<div>Felia Sri Indriyani</div>
-	<div>Arif Rizky Gilang</div>
-	<div>Fahmi Izzuddin</div>
-</div>

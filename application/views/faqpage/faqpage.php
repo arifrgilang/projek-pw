@@ -1,7 +1,7 @@
 	<!--QNA-->
 	<h1>Frequently Asked Question</h1>
 	<hr>
-	<div class="grid-container">
+	<div class="containerFAQ">
 		<div>Q:------------------------------------------</div>
 		<div>A:------------------------------------------</div>
 		<br>

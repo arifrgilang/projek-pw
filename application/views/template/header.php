@@ -16,9 +16,9 @@
 				<li><a href="<?php echo site_url(); ?>">Home</a></li>
 			    <li><a href="<?php echo site_url('/price'); ?>">Price List</a></li>
 			    <li><a href="<?php echo site_url('/faq'); ?>">FAQ</a></li>  
-			    <li><a href="#">Credit</a></li>
 				<li><a href="#">Print E-Book Order</a></li>
 				<li><a href="#">Order Check</a></li> 
+				<li><a href="<?php echo site_url('/credit'); ?>">Credit</a></li>
 			</ul>
 		<span class="toggle">☰</span>
 		</label>
