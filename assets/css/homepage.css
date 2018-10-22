@@ -172,7 +172,7 @@ h3{
 
 .menu.utama {
     width: 100%;
-    padding: 0;
+    padding-bottom: 30px;
     margin: 0;
     text-align: center;
 }
@@ -221,7 +221,8 @@ h3{
 	padding: 10px;
 	margin-right: 1%;
 	margin-left: 15%;
-	margin-bottom: 8%; 
+	margin-bottom: 8%;
+	padding-bottom: 60px; 
 }
 
 .containerFAQ > div {
@@ -246,8 +247,7 @@ h3{
 	grid-gap: 10%;
 	background-color: white;
 	padding: 10px;
-	margin-right: 1%;
-	margin-left: 1%; 
+	padding-bottom: 60px;
 }
 
 .containerprice1 {
@@ -258,8 +258,7 @@ h3{
 	grid-gap: 5%;
 	background-color: white;
 	padding: 10px;
-	margin-right: 1%;
-	margin-left: 1%;
+	padding-bottom:60px;
 
 }
 
@@ -297,6 +296,7 @@ footer{
     color:white;
     text-align: center;
 	padding: 0px;
+	position: fixed;
 	bottom: 0;
     width:100%;
 }
