@@ -21,8 +21,15 @@ Akan di update terus menerus
 
 ---
 
-#### Progress 1.2 [Thu, 8th Oct 2018]
+#### Progress 1.2 [Thu, 18th Oct 2018]
 
 1. **Layout sudah di sambungkan dengan controller. Homepage bisa di akses melalui link**
 
    > http://localhost/projek-pw
+
+#### Progress 1.3 [Mon, 22nd Oct 2018]
+
+1. **Implementasi Javascript**
+   - Penggunaan tampilan jam pada footer
+   - penggunaan javascript masih inline
+   - file external javascript belum bisa disambungkan ke halaman

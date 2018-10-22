@@ -13,7 +13,7 @@ Repository ini untuk project kelompok mata kuliah Pemrograman Web yang beranggot
 Detail perubahan disimpan di [LOG.md](https://github.com/arifrgilang/projek-pw/blob/master/LOG.md)
 1. Progress 1.1 [Wed, 10th Oct 2018]
 2. Progress 1.2 [Thu, 18th Oct 2018]
-
+3. Progress 1.3 [Mon, 22nd Oct 2018]
 ---
 
 ## Tentang Project

@@ -298,5 +298,19 @@ footer{
 	padding: 0px;
 	position: fixed;
 	bottom: 0;
-    width:100%;
+	left: 0px;
+	width: 100%;
+}
+
+#copyright{
+	float: left;
+	color: #FFFFFF;
+	width: 100%;
+	text-align: center;
+}
+
+.clock{
+	position: fixed;
+	color: #FFFFFF;
+	right:10px;
 }
