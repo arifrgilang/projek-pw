@@ -1,5 +1,5 @@
 	<!--QNA-->
-	<h1>Frequently Asked Question</h1>
+	<h1 class="titleFAQ">Frequently Asked Question</h1>
 	<hr>
 	<div class="containerFAQ">
 		<div>Q:------------------------------------------</div>

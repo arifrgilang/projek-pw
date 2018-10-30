@@ -6,11 +6,11 @@
 	<!--section kurir-->
 	<br>
 	<h3 align="left">Kurir</h3>
-	<div class="grid-container">
-		<div>teks</div>
-		<div>teks</div>
-		<div>teks</div>
-		<div>teks</div>
+	<div class="containerprice">
+		<div>Kurir A</div>
+		<div>Kurir B</div>
+		<div>Kurir C</div>
+		<div>Kurir D</div>
 	</div>
 
 	<!--kertas-->

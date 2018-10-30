@@ -2,6 +2,7 @@
 
 body{
 	background: white;
+	
 }
 
 nav#menunav{
@@ -159,15 +160,15 @@ h1,h2,h3{
 }
 
 h1{
-	font-size:8vw;
+	font-size:11vw;
 }
 
 h2{
-	font-size:2.5vw;
+	font-size:100px;
 }
 
 h3{
-	font-size:1.8vw;
+	font-size:25px;
 }
 
 .menu.utama {
@@ -196,21 +197,38 @@ h3{
 }
 
 .grid-container > div {
-   background-color: lightgrey;
-   text-align: center;
-   padding: 0px;
-   font-size: 1.3vw;
-   border-radius: 5px;
+	background-color: lightgrey;
+	text-align: center;
+	padding: 0px;
+	font-size: 1.3vw;
+	border-radius: 5px;
 }
 
-#nameCard {
-	padding: 5px;
+.container-title{
+	width: 60%;
+	float: left;
+	text-align: center;
+	height: 85vh;
 }
 
+#title{
+	font-size: 11vw;
+	color: #006666;
+	margin-top: 22vh;
+}
+
+#subtitle{
+	font-size: 2.5vw;
+	margin: auto;
+	color: #006666;
+}
 /***************************************************************************************/
 
 /* FAQ */
-
+.titleFAQ{
+	font-size: 7vw;
+	text-align: center;
+}
 .containerFAQ {
 	width: 70%;
 	float:center;
@@ -239,6 +257,7 @@ h3{
 
 /* PRICE LIST */
 
+
 .containerprice {
 	width: 100%;
 	float:center;
@@ -259,7 +278,7 @@ h3{
 	background-color: white;
 	padding: 10px;
 	padding-bottom:60px;
-
+	border-radius: 5px;
 }
 
 .containerprice > div {
@@ -268,6 +287,7 @@ h3{
    padding: 20px 0;
    font-size: 1.3vw;
    color : white;
+   border-radius: 5px;
 }
 
 .containerprice1 > div {
@@ -278,10 +298,19 @@ h3{
    padding: 0;
    padding-top: 9px;
    color : white;
+   border-radius: 5px;
+}
+
+/***************************************************************************************/
+
+/* CREDIT */
+
+#nameCard {
+	padding: 5px;
 }
 
 .credit-pic{
-	width: 70%;	
+	width: 20vw;
 }
 
 /***************************************************************************************/
