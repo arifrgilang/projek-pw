@@ -1,11 +1,12 @@
 	<!--section-->
-	<div class="menu utama">
+	<div class="titlePrice">
 	  	<h1>Price List</h1>
 	</div>
-
+	
 	<!--section kurir-->
-	<br>
-	<h3 align="left">Kurir</h3>
+	<hr>
+	<h3 style="text-align:center">Kurir</h3>
+	<hr>
 	<div class="containerprice">
 		<div>Kurir A</div>
 		<div>Kurir B</div>
@@ -14,9 +15,12 @@
 	</div>
 
 	<!--kertas-->
-	<h3 align="left">Letter List</h3>
-	<div class="grid-container">
-		<div>A4 kosong
+	<hr>
+	<h3 style="text-align:center">Letter List</h3>
+	<hr>
+	<div class="containerprice1">
+		<div>A4 kosong	
+			<hr>
 			<table>
 				<tr>
 					<td>hvs</td>
@@ -29,6 +33,7 @@
 			</table>
 		</div>
 		<div>A4 kosong
+			<hr>
 			<table>
 				<tr>
 					<td>hvs</td>
@@ -41,6 +46,7 @@
 			</table>
 		</div>
 		<div>A4 kosong
+			<hr>
 			<table>
 				<tr>
 					<td>hvs</td>
@@ -54,9 +60,12 @@
 		</div>
 	</div>
 
-	<h3 align="left">Letter List</h3>
+	<hr>
+	<h3 style="text-align:center">Letter List</h3>
+	<hr>
 	<div class="containerprice1">
 		<div>A4 kosong
+			<hr>
 			<table>
 				<tr>
 					<td>hvs</td>
@@ -69,6 +78,7 @@
 			</table>
 		</div>
 		<div>A4 kosong
+			<hr>
 			<table>
 				<tr>
 					<td>hvs</td>
@@ -81,6 +91,7 @@
 			</table>
 		</div>
 		<div>A4 kosong
+			<hr>
 			<table>
 				<tr>
 					<td>hvs</td>

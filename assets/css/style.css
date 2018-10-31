@@ -1,4 +1,4 @@
-/* NAVIGATION BAR */
+/* HEADER */
 
 body{
 	background: white;
@@ -257,6 +257,10 @@ h3{
 
 /* PRICE LIST */
 
+.titlePrice{
+	font-size: 11vw;
+	text-align: center;
+}
 
 .containerprice {
 	width: 100%;
@@ -265,7 +269,7 @@ h3{
 	grid-template-columns: auto auto auto auto;
 	grid-gap: 10%;
 	background-color: white;
-	padding: 10px;
+	padding: 20px;
 	padding-bottom: 60px;
 }
 
@@ -276,8 +280,7 @@ h3{
 	grid-template-columns: auto auto auto;
 	grid-gap: 5%;
 	background-color: white;
-	padding: 10px;
-	padding-bottom:60px;
+	padding: 10px 20px 60px 20px;
 	border-radius: 5px;
 }
 
@@ -318,6 +321,7 @@ h3{
 /* FOOTER */
 
 footer{
+	border-top: 1px solid;
 	height:5%;
     height:30px;
     line-height:30px;
