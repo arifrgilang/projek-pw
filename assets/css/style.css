@@ -268,7 +268,7 @@ h3{
 	float:center;
 	display: grid;
 	grid-template-columns: auto;
-	grid-gap: 5%;
+	grid-gap: 2%;
 	background-color: white;
 	padding: 10px;
 	margin-right: 1%;
@@ -312,7 +312,7 @@ h3{
 	width: 100%;
 	float:center;
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto auto auto;
 	grid-gap: 5%;
 	background-color: white;
 	padding: 10px 20px 60px 20px;
@@ -338,6 +338,28 @@ h3{
    color : white;
    border-radius: 5px;
 }
+
+.containerprice2{
+	width: 100%;
+	float:center;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 5%;
+	background-color: white;
+	padding: 10px 20px 60px 20px;
+	border-radius: 5px;
+}
+
+.containerprice2 > div {
+	background-color: #006666;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 1.3vw;
+	padding: 0;
+	padding-top: 9px;
+	color : white;
+	border-radius: 5px;
+ }
 
 /***************************************************************************************/
 
