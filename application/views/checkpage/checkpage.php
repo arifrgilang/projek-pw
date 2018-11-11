@@ -7,7 +7,6 @@
             <div style="font-size: 24px">Kode Pesanan</div>
             <input  id="kodPes" type="text" name="kodPes">
         </form>
-
         <br><br><br><br>
         
         <!-- buat status -->

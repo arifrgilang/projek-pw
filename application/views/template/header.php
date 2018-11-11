@@ -1,5 +1,5 @@
 <!doctype html>
-<html style="font-family:roboto">
+<html style="font-family:Roboto">
 <head>
 	<title>POOKS</title>
 	<meta name ="viewport" content="width=device, initial-scale=1, user-scalable=no">
@@ -16,9 +16,9 @@
 				<li><a href="<?php echo site_url(); ?>">Home</a></li>
 			    <li><a href="<?php echo site_url('/price'); ?>">Price List</a></li>
 			    <li><a href="<?php echo site_url('/faq'); ?>">FAQ</a></li>  
-				<li><a href="#">Print E-Book Order</a></li>
 				<li><a href="<?php echo site_url('check'); ?>">Order Check</a></li> 
-				<li><a href="<?php echo site_url('/credit'); ?>">Credit</a></li> 
+				<li><a href="<?php echo site_url('/credit'); ?>">Credit</a></li>
+				<li><a href="#" style="background-color:#006666; color:#dbdbdb">Print E-Book Order</a></li> 
 			</ul>
 		<span class="toggle">☰</span>
 		</label>
