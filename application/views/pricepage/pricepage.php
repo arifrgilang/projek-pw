@@ -1,8 +1,5 @@
 	<!--section-->
-	<div class="titlePrice">
 	  	<h1>Price List</h1>
-	</div>
-	
 	<!--section kurir-->
 	<hr>
 	<h3 style="text-align:center">Kurir</h3>
@@ -19,19 +16,6 @@
 	<h3 style="text-align:center">Harga Kertas</h3>
 	<hr>
 	<div class="containerprice1">
-		<div>A4 (21 cm x 29.7 cm)	
-			<hr>
-			<table>
-				<tr>
-					<td>HVS(per hlm)</td>
-					<td>Rp.110,-</td>
-				</tr>
-				<tr>
-					<td>HSSD(per hlm)</td>
-					<td>Rp.150,-</td>
-				</tr>
-			</table>
-		</div>
 		<div>A5 (14.5 cm x 21 cm)
 			<hr>
 			<table>
@@ -42,6 +26,19 @@
 				<tr>
 					<td>HSSD(per hlm)</td>
 					<td>Rp.80,-</td>
+				</tr>
+			</table>
+		</div>
+		<div>A4 (21 cm x 29.7 cm)	
+			<hr>
+			<table>
+				<tr>
+					<td>HVS(per hlm)</td>
+					<td>Rp.110,-</td>
+				</tr>
+				<tr>
+					<td>HSSD(per hlm)</td>
+					<td>Rp.150,-</td>
 				</tr>
 			</table>
 		</div>

@@ -1,10 +1,41 @@
-/* HEADER */
 
-body{
-	background: white;
-	
+/***************************************************************************************/
+/* GLOBAL */
+/***************************************************************************************/
+html{
+	scroll-behavior: smooth;
+	font-family:'robo';
 }
 
+header, footer {
+	font-family: 'ps';
+}
+
+body{
+	background: white;	
+}
+
+h1,h2,h3{
+	color: #006666;
+	font-family: 'ps'
+}
+
+h1{
+	font-size:7vw;
+	text-align: center;
+}
+
+h2{
+	font-size:2.5vw;
+}
+
+h3{
+	font-size:1.8vw;
+}
+
+/***************************************************************************************/
+/* HEADER */
+/***************************************************************************************/
 nav#menunav{
 	margin:0 auto;
 	max-width:700px;
@@ -83,7 +114,7 @@ nav#menunav .menu li a{
 		display:flex;
 		flex-direction:column;
 		justify-content:space-around;
-		align-items:center;height:0;
+		align-items:left ;height:0;
 		transition:height .3s linear;
 	}
 	nav#menunav .menu li{
@@ -98,7 +129,7 @@ nav#menunav .menu li a{
 		width:95%;
 		text-align:center;
 		align-self:center;
-		align-content:center
+		align-content:center;
 	}
 }
 
@@ -155,22 +186,6 @@ nav#menunav li a:hover{
   right: 0;
 }
 
-h1,h2,h3{
-	color: #006666;
-}
-
-h1{
-	font-size:11vw;
-}
-
-h2{
-	font-size:2.5vw;
-}
-
-h3{
-	font-size:1.8vw;
-}
-
 .menu.utama {
     width: 100%;
     padding-bottom: 30px;
@@ -182,10 +197,16 @@ h3{
     box-sizing: border-box;
 }
 
+#order{
+	/* top: 15px;
+	right: 15px;
+	position: fixed; */
+	background-color:#006666; 
+}
+
 /***************************************************************************************/
-
 /* HOMEPAGE */
-
+/***************************************************************************************/
 .grid-container {
 	width: 100%;
 	display: grid;
@@ -212,12 +233,14 @@ h3{
 }
 
 #title{
+	font-family: 'ps';
 	font-size: 11vw;
 	color: #006666;
 	margin-top: 22vh;
 }
 
 #subtitle{
+	font-family: 'ps';
 	font-size: 2.5vw;
 	margin: auto;
 	color: #006666;
@@ -231,6 +254,10 @@ h3{
 	text-align: center;
 }
 
+.container2 > a > button > span {
+	font-family: 'ps';
+}
+
 .containerTesti{
 	width: 70%;
 	float:center;
@@ -242,31 +269,27 @@ h3{
 	margin-right: 1%;
 	margin-left: 15%;
 	margin-bottom: 8%;
-	padding-bottom: 60px; 
 }
 
 .containerTesti > div{
 	border-radius: 4px;
 	background-color: white;
 	color:#006666;
-   	text-align: left;
+   	text-align: justify;
    	padding: 10px;
-   	font-size: 1.5vw;
+   	font-size: 20px;
    	border-color: #006666;
    	border: solid;
 }	
 
-.containerTesti > div > h2{
-   	font-size: 1.8vw;
-}	
+.containerTesti > div > div {
+	margin-top: 3px;
+	text-align: right;
+}
 
 /***************************************************************************************/
-
 /* FAQ */
-.titleFAQ{
-	font-size: 7vw;
-	text-align: center;
-}
+/***************************************************************************************/
 .containerFAQ {
 	width: 70%;
 	float:center;
@@ -293,14 +316,8 @@ h3{
 }
 
 /***************************************************************************************/
-
 /* PRICE LIST */
-
-.titlePrice{
-	font-size: 11vw;
-	text-align: center;
-}
-
+/***************************************************************************************/
 .containerprice {
 	width: 100%;
 	float:center;
@@ -337,10 +354,15 @@ h3{
    text-align: center;
    padding: 20px 0;
    font-size: 1.3vw;
-   padding: 0;
+   padding: 0;	
    padding-top: 9px;
    color : white;
    border-radius: 5px;
+}
+
+.containerprice1 > div > table{
+	text-align: left;
+	padding-left: 2px;
 }
 
 .containerprice2{
@@ -365,15 +387,14 @@ h3{
 	border-radius: 5px;
  }
 
-/***************************************************************************************/
-
-/* CEK PESANAN */
-
-.titleCP{
-	font-size: 7vw;
-	text-align: center;
+.containerprice2 > div > table{
+	text-align: left;
+	padding-left: 2px;
 }
 
+/***************************************************************************************/
+/* CEK PESANAN */
+/***************************************************************************************/
 .containerCP{
 	width: 100%;
 	display: grid;
@@ -387,9 +408,8 @@ h3{
 }
 
 /***************************************************************************************/
-
 /* CREDIT */
-
+/***************************************************************************************/
 #nameCard {
 	padding: 5px;
 }
@@ -399,9 +419,23 @@ h3{
 }
 
 /***************************************************************************************/
+/* ORDER */
+/***************************************************************************************/
+.containerPesan {
+	width: 60%;
+	float: left;
+	background-color: #006666;
+}
 
+.containerBayar {
+	width: 40%;
+	float: right;
+	background-color: #595959;
+}
+
+/***************************************************************************************/
 /* FOOTER */
-
+/***************************************************************************************/
 footer{
 	border-top: 1px solid;
 	height:5%;
@@ -428,4 +462,58 @@ footer{
 	position: fixed;
 	color: #FFFFFF;
 	right:8px;
+}
+
+/***************************************************************************************/
+/* FONT */
+/***************************************************************************************/
+/* roboto */
+@font-face {
+	font-family: robo;
+	src: url("Roboto-Regular.ttf");
+}
+
+@font-face {
+	font-family: robo;
+	src: url("Roboto-Bold.ttf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: robo;
+	src: url("Roboto-BoldItalic.ttf");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: robo;
+	src: url("Roboto-Regular.ttf");
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* product sans */
+@font-face {
+	font-family: ps;
+	src: url("Product Sans Regular.ttf");	
+}
+
+@font-face {
+	font-family: ps;
+	src: url("Product Sans Bold Italic.ttf");
+	font-weight: bold;
+	font-style: italic;	
+}
+
+@font-face {
+	font-family: ps;
+	src: url("Product Sans Italic.ttf");
+	font-style: italic;	
+}
+
+@font-face {
+	font-family: ps;
+	src: url("Product Sans Bold.ttf");
+	font-weight: bold;	
 }

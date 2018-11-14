@@ -1,5 +1,5 @@
 <!--section about us-->
-<h1 style="text-align:center">The Team</h1>
+<h1>The Team</h1>
 <hr>
 <div class="menu utama">
     <div class="grid-container" id="nameCard">
@@ -19,7 +19,7 @@
             <br><br>
             <img class="credit-pic" src="http://hda.himatif.org/assets/foto/2017/62.jpg">
             <br>
-            Fahmi Izzuddin
+            Fahmi Izzuddin Abdurrahman
         </div>
     </div>
 </div>

@@ -1,30 +1,24 @@
 	<!--QNA-->
-	<h1 class="titleFAQ">Frequently Asked Question</h1>
+	<h1>Frequently Asked Question</h1>
 	<hr>
 	<div class="containerFAQ">
 		<div>Q:Untuk kontak kalau ingin tanya tanya tanya dulu ada ga ya?</div>
 		<div>A:Bisa kontak via WA di 0838-21-666-100</div>
-		<br>
-		<hr>
+		<hr width=100%>
 		<div>Q:Berapa biaya ongkos untuk percetakan?</div>
 		<div>A:Ongkos kirim tergantung dari kurir dan tergantung jarak daerah juga</div>
-		<br>
-		<hr>
+		<hr width=100%>
 		<div>Q:Apakah ada minimum order?</div>
 		<div>A:Order 1 buku saja bisa kok</div>
-		<br>
-		<hr>
+		<hr width=100%>
 		<div>Q:Bagaimana jika file pdf tidak sesuai dengan size halaman?</div>
 		<div>A:Akan kami betulkan dulu dan konfirmasikan ke pembeli</div>
-		<br>
-		<hr>
+		<hr width=100%>
 		<div>Q:Bagaimana jika saya memesan ukuran kertas yang tidak sesuai pada list kertas?</div>
 		<div>A:Untuk saat ini masih belum bisa diluar ukuran kertas</div>
-		<br>
-		<hr>
+		<hr width=100%>
 		<div>Q:Berapa lama proses pengerjaan?</div>
 		<div>A:Estimasi waktu pengerjaan 3-7 hari kerja untuk 1-10 buku, jika ingin tahu status pemrosesan buku bisa dilihat di Kolom Cek Pesanan</div>
-		<br>
 		<br>
 	</div>
 	
