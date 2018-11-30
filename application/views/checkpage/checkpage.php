@@ -4,8 +4,8 @@
         </h1>
 
         <form action="" method="POST">
-            <div style="font-size: 24px">Kode Pesanan</div>
-            <input  id="kodPes" type="text" name="kodPes">
+            <input  id="kodPes" type="text" name="kodPes"> <br>
+            <button class="button">Cek Pesanan</button>
         </form>
         <br><br><br><br>
         

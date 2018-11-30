@@ -5,8 +5,7 @@
 	</div>
 
 	<div class="container2">
-		<h2 style="padding-top:25vh">"KNOWLEDGE 
-		IS NEVER BE LIMIT"</h2>
+		<h2 style="padding-top:25vh">"KNOWLEDGE IS NEVER BE LIMIT"</h2>
   		<h3>We support you to the next level</h3>
 	
 		<a href="#testi"><button class="button" style="vertical-align:middle"><span> testimoni </span></button></a>
