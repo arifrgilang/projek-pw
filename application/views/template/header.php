@@ -19,6 +19,7 @@
 				<li><a href="<?php echo site_url('check'); ?>">Order Check</a></li>
 				<li><a href="<?php echo site_url('pages/credit'); ?>">Credit</a></li>
 				<li><a href="<?php echo site_url('order');?>" id="order" style="color: #dbdbdb;">Print E-Book Order</a></li> 
+				<li><a href="<?php echo site_url('login'); ?>">Administrator</a></li>
 			</ul>
 		<span class="toggle">☰</span>
 		</label>
