@@ -21,7 +21,6 @@ class Admin extends CI_Controller {
             $this->load->view('admin/waitlist', $data);
             $this->load->view('template/footer');
         }
-        
     }
 
     public function on_process(){
