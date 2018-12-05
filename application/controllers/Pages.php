@@ -5,7 +5,7 @@ class Pages extends CI_Controller {
 
     public function view($page = 'homepage'){
         $this->load->view('template/header');
-        $this->load->view('mainweb/'.$page);
+        $this->load->view('pages/'.$page);
         $this->load->view('template/footer');
     }
 }
