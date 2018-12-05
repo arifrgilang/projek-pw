@@ -1,24 +1,18 @@
 <!--section about us-->
 <h1>The Team</h1>
-<hr>
-<div class="menu utama">
-    <div class="grid-container" id="nameCard">
-	    <div>
-            <br><br>
-            <img class="credit-pic" src="http://hda.himatif.org/assets/foto/2017/18.jpg">
-            <br>
-            Felia Sri Indriyani
+
+<div class="containerCredit">
+    <div>
+	    <div id="nameCard">
+            <img class="credit-pic" src="http://hda.himatif.org/assets/foto/2017/18.jpg"> <br>
+            <span>Felia Sri Indriyani</span>
         </div>
-	    <div>
-            <br><br>
-            <img class="credit-pic" src="http://hda.himatif.org/assets/foto/2017/30.jpg">
-            <br>
-            Arif Rizky Gilang
+	    <div id="nameCard">
+            <img class="credit-pic" src="http://hda.himatif.org/assets/foto/2017/30.jpg"> <br>
+            Arif Rhizky Gilang
         </div>
-	    <div>
-            <br><br>
-            <img class="credit-pic" src="http://hda.himatif.org/assets/foto/2017/62.jpg">
-            <br>
+	    <div id="nameCard">
+            <img class="credit-pic" src="http://hda.himatif.org/assets/foto/2017/62.jpg"> <br>
             Fahmi Izzuddin Abdurrahman
         </div>
     </div>

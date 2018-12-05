@@ -1,6 +1,6 @@
 	<!--QNA-->
 	<h1>Frequently Asked Question</h1>
-	<hr>
+	
 	<div class="containerFAQ">
 		<div>Q:Untuk kontak kalau ingin tanya tanya tanya dulu ada ga ya?</div>
 		<div>A:Bisa kontak via WA di 0838-21-666-100</div>

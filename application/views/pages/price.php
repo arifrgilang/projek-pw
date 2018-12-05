@@ -1,9 +1,9 @@
 	<!--section-->
 	  	<h1>Price List</h1>
 	<!--section kurir-->
-	<hr>
+	
 	<h3 style="text-align:center">Kurir</h3>
-	<hr>
+	
 	<div class="containerprice">
 		<div>JNE</div>
 		<div>Go-Jek</div>
@@ -12,20 +12,20 @@
 	</div>
 
 	<!--kertas-->
-	<hr>
+	
 	<h3 style="text-align:center">Harga Kertas</h3>
-	<hr>
+	
 	<div class="containerprice1">
 		<div>A5 (14.5 cm x 21 cm)
 			<hr>
 			<table>
 				<tr>
 					<td>HVS(per hlm)</td>
-					<td>Rp.60,-</td>
+					<td class="harga">Rp.60,-</td>
 				</tr>
 				<tr>
 					<td>HSSD(per hlm)</td>
-					<td>Rp.80,-</td>
+					<td class="harga">Rp.80,-</td>
 				</tr>
 			</table>
 		</div>
@@ -34,11 +34,11 @@
 			<table>
 				<tr>
 					<td>HVS(per hlm)</td>
-					<td>Rp.110,-</td>
+					<td class="harga">Rp.110,-</td>
 				</tr>
 				<tr>
 					<td>HSSD(per hlm)</td>
-					<td>Rp.150,-</td>
+					<td class="harga">Rp.150,-</td>
 				</tr>
 			</table>
 		</div>
@@ -47,11 +47,11 @@
 			<table>
 				<tr>
 					<td>HVS(per hlm)</td>
-					<td>Rp.60,-</td>
+					<td class="harga">Rp.110,-</td>
 				</tr>
 				<tr>
 					<td>HSSD(per hlm)</td>
-					<td>Rp.80,-</td>
+					<td class="harga">Rp.150,-</td>
 				</tr>
 			</table>
 		</div>
@@ -60,30 +60,29 @@
 			<table>
 				<tr>
 					<td>HVS(per hlm)</td>
-					<td>Rp.60,-</td>
+					<td class="harga">Rp.60,-</td>
 				</tr>
 				<tr>
 					<td>HSSD(per hlm)</td>
-					<td>Rp.80,-</td>
+					<td class="harga">Rp.80,-</td>
 				</tr>
 			</table>
 		</div>
 	</div>
 
-	<hr>
 	<h3 style="text-align:center">Harga Cover</h3>
-	<hr>
+
 	<div class="containerprice2">
 		<div>Soft Cover
 			<hr>
 			<table>
 				<tr>
 					<td>BW</td>
-					<td>Rp.10.000,-</td>
+					<td class="harga">Rp.10.000,-</td>
 				</tr>
 				<tr>
 					<td>Warna</td>
-					<td>Rp.15.000,-</td>
+					<td class="harga">Rp.15.000,-</td>
 				</tr>
 			</table>
 		</div>
@@ -92,11 +91,11 @@
 			<table>
 				<tr>
 					<td>BW</td>
-					<td>Rp.14.000,-</td>
+					<td class="harga">Rp.14.000,-</td>
 				</tr>
 				<tr>
 					<td>Warna</td>
-					<td>Rp.19.000,-</td>
+					<td class="harga">Rp.19.000,-</td>
 				</tr>
 			</table>
 		</div>

@@ -1,10 +1,13 @@
 <form method="post" action="<?php echo site_url('login/cek_login') ?>">
-    <!-- Password -->
-    <div>
-        <label for="password">Password</label>
-        <br>
-        <input type="password" class="form-control" id="password" placeholder="Masukkan password" name="password">
+    <div class="containerLogin">
+        <div class="kiri">
+            <!-- Password -->
+            <label for="password" style="font-size:25px">Password</label> <br>
+            <input type="password" id="password" placeholder="Masukkan password" name="password">
+        </div>
+        <div class="kanan">
+            <!-- Submit Button -->
+            <button type="submit" class="button">Masuk</button>
+        </div>
     </div>
-    <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary">Masuk</button>
 </form>

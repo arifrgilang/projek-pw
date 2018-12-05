@@ -10,16 +10,14 @@
 	<header>
 	<!--navbar-->
 	<nav id="menunav">
-	    <input type="checkbox" id="checkbox1" />
 	    <label for="checkbox1">
-			<ul class="menu bar" style="color:#006666">
-                <li style="float:left"><strong>Administrator Page</strong></li>
+			<ul class="menu bar" style="color:#FFFFFF">
+                <li id="admin">Administrator Page</li>
 				<li><a href="<?php echo site_url('/admin/index'); ?>">Wait List</a></li>
 			    <li><a href="<?php echo site_url('/admin/on_process'); ?>">On Process</a></li>
 			    <li><a href="<?php echo site_url('/admin/finished'); ?>">Finished</a></li>  
 				<li><a href="<?php echo site_url('/admin/logout');?>" id="order" style="color: #dbdbdb;">LOGOUT</a></li> 
 			</ul>
-		<span class="toggle">☰</span>
 		</label>
 	</nav>
 	</header>

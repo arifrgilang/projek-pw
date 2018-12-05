@@ -1,16 +1,18 @@
 <!--section-->
-	<div class="container-title">
+	<div class="container-home">
+	<div>
 		<div id="title"><b>POOKS</b></div>
 		<div id="subtitle">Print E-Books</div>
 	</div>
 
-	<div class="container2">
+	<div id="container2">
 		<h2 style="padding-top:25vh">"KNOWLEDGE IS NEVER BE LIMIT"</h2>
   		<h3>We support you to the next level</h3>
 	
 		<a href="#testi"><button class="buttonhome" style="vertical-align:middle"><span> testimoni </span></button></a>
 	</div>
-
+	</div>
+	
 	<div id="testi" class="containerTesti">
 		<div>
 			"Awalnya lagi bingung nyari buku buat anak terus ketemu sama web ini dan masalahnya kurang percaya juga sama transaksi online gitu, tapi pas udah pake POOKS ternyata transaksi online tuh mudah banget dan kualitas produk jadinya pun ga mengecewakan"
