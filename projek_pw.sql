@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 05, 2018 at 10:26 AM
+-- Generation Time: Dec 05, 2018 at 06:22 PM
 -- Server version: 10.0.36-MariaDB-0ubuntu0.16.04.1
 -- PHP Version: 7.2.12-1+ubuntu16.04.1+deb.sury.org+1
 
@@ -135,6 +135,7 @@ CREATE TABLE `pemesan` (
   `kodePesanan` varchar(30) NOT NULL DEFAULT '',
   `namaPemesan` varchar(255) DEFAULT NULL,
   `alamat` varchar(255) DEFAULT NULL,
+  `notelp` varchar(30) NOT NULL,
   `linkBuktiBayar` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -142,13 +143,13 @@ CREATE TABLE `pemesan` (
 -- Dumping data for table `pemesan`
 --
 
-INSERT INTO `pemesan` (`kodePesanan`, `namaPemesan`, `alamat`, `linkBuktiBayar`) VALUES
-('p_0001', 'Ewok', 'Cirebon', 'linktest1.com'),
-('p_0002', 'Arif R Gilang', 'Cisaranten Wetan', 'linktest2.com'),
-('p_0003', 'Dani Imron', 'bekasi', 'linktest3.com'),
-('p_0004', 'Miwon', 'Bandung', 'linktest4.com'),
-('p_0005', 'Achun', 'Cirebon', 'linktest5.com'),
-('p_0006', 'Ijut', 'Sukawening', 'linktest6.com');
+INSERT INTO `pemesan` (`kodePesanan`, `namaPemesan`, `alamat`, `notelp`, `linkBuktiBayar`) VALUES
+('p_0001', 'Ewok', 'Cirebon', '083821666111', 'linktest1.com'),
+('p_0002', 'Arif R Gilang', 'Cisaranten Wetan', '083821666100', 'linktest2.com'),
+('p_0003', 'Dani Imron', 'bekasi', '081221696921', 'linktest3.com'),
+('p_0004', 'Miwon', 'Bandung', '081220056355', 'linktest4.com'),
+('p_0005', 'Achun', 'Cirebon', '088363620122', 'linktest5.com'),
+('p_0006', 'Ijut', 'Sukawening', '081220001020', 'linktest6.com');
 
 -- --------------------------------------------------------
 
@@ -165,19 +166,20 @@ CREATE TABLE `pesanan` (
   `kodeKurir` varchar(30) DEFAULT NULL,
   `jumlahHalaman` int(11) DEFAULT NULL,
   `hargaTotal` int(11) DEFAULT NULL,
-  `statusPesanan` varchar(255) DEFAULT NULL
+  `statusPesanan` varchar(255) DEFAULT NULL,
+  `link_file` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `pesanan`
 --
 
-INSERT INTO `pesanan` (`id`, `kodePesanan`, `kodeCover`, `kodeJenis`, `kodeUkuran`, `kodeKurir`, `jumlahHalaman`, `hargaTotal`, `statusPesanan`) VALUES
-(2, 'p_0002', 'cov_02', 'jk_hssd', 'uk_a5', 'k03', 130, 50000, 'onprocess'),
-(3, 'p_0003', 'cov_01', 'jk_hssd', 'uk_a5', 'k03', 200, 70000, 'finished'),
-(4, 'p_0004', 'cov_01', 'jk_hvs', 'uk_b4', 'k04', 130, 60000, 'finished'),
-(5, 'p_0005', 'cov_02', 'jk_hvs', 'uk_a4', 'k03', 300, 80000, 'declined'),
-(6, 'p_0006', 'cov_02', 'jk_hssd', 'uk_a5', 'k03', 300, 75000, 'waitlist');
+INSERT INTO `pesanan` (`id`, `kodePesanan`, `kodeCover`, `kodeJenis`, `kodeUkuran`, `kodeKurir`, `jumlahHalaman`, `hargaTotal`, `statusPesanan`, `link_file`) VALUES
+(2, 'p_0002', 'cov_02', 'jk_hssd', 'uk_a5', 'k03', 130, 50000, 'declined', 'file1.com'),
+(3, 'p_0003', 'cov_01', 'jk_hssd', 'uk_a5', 'k03', 200, 70000, 'finished', 'file2.com'),
+(4, 'p_0004', 'cov_01', 'jk_hvs', 'uk_b4', 'k04', 130, 60000, 'finished', 'file3.com'),
+(5, 'p_0005', 'cov_02', 'jk_hvs', 'uk_a4', 'k03', 300, 80000, 'finished', 'file4.com'),
+(6, 'p_0006', 'cov_02', 'jk_hssd', 'uk_a5', 'k03', 300, 75000, 'waitlist', 'file5.com');
 
 -- --------------------------------------------------------
 
