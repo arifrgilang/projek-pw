@@ -13,7 +13,8 @@ class Admin extends CI_Controller {
         if(!$this->session->logged_in){
             redirect('/login');
         }else{
-            $data['waitlist'] = $this->m_pesanan->get_wait_list('pesanan','statusPesanan','waitinglist');
+            $data['waitlist'] = $this->m_pesanan->get_wait_list('pesanan','statusPesanan','waitlist');
+            $data['declined'] = $this->m_pesanan->get_wait_list('pesanan','statusPesanan','declined');
             if(empty($data['waitlist'])){
                 show_404();
             }
@@ -49,6 +50,71 @@ class Admin extends CI_Controller {
             $this->load->view('admin/finished', $data);
             $this->load->view('template/footer');
         }
+    }
+
+    public function accept_order(){
+        $kodePesanan = $this->input->post('kodePesanan');
+
+        $data = array(
+            'statusPesanan' => 'onprocess'
+        );
+
+        $this->db->where('kodePesanan', $kodePesanan);
+        $this->db->update('pesanan', $data);
+        redirect('/admin');
+    }
+
+    public function decline_order(){
+        $kodePesanan = $this->input->post('kodePesanan');
+
+
+        $data = array(
+            'statusPesanan' => 'declined'
+        );
+
+        $this->db->where('kodePesanan', $kodePesanan);
+        $this->db->update('pesanan', $data);
+        redirect('/admin');
+
+        // $this->db->where('kodePesanan', $kodePesanan);
+        // $this->db->delete('pesanan');
+        // redirect('/admin');
+    }
+
+    public function finish_order(){
+        $kodePesanan = $this->input->post('kodePesanan');
+
+        $data = array(
+            'statusPesanan' => 'finished'
+        );
+
+        $this->db->where('kodePesanan', $kodePesanan);
+        $this->db->update('pesanan', $data);
+        redirect('/admin/on_process');
+    }
+
+    public function to_waitlist(){
+        $kodePesanan = $this->input->post('kodePesanan');
+
+        $data = array(
+            'statusPesanan' => 'waitlist'
+        );
+
+        $this->db->where('kodePesanan', $kodePesanan);
+        $this->db->update('pesanan', $data);
+        redirect('/admin');
+    }
+
+    public function to_onprocess(){
+        $kodePesanan = $this->input->post('kodePesanan');
+
+        $data = array(
+            'statusPesanan' => 'onprocess'
+        );
+
+        $this->db->where('kodePesanan', $kodePesanan);
+        $this->db->update('pesanan', $data);
+        redirect('/admin/on_process');
     }
 
     function logout(){

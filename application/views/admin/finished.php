@@ -11,6 +11,18 @@
             <td><?php echo $item->kodeKurir ?></td>
             <td><?php echo $item->jumlahHalaman ?></td>
             <td><?php echo $item->hargaTotal ?></td>
+            <td>
+                <?php echo form_open('admin/to_waitlist'); ?>
+                    <input type="hidden" name="kodePesanan" value="<?php echo $item->kodePesanan ?>">
+                    <button type="submit">Move to Waitlist</button>
+                </form>
+            </td>
+            <td>
+                <?php echo form_open('admin/to_onprocess'); ?>
+                    <input type="hidden" name="kodePesanan" value="<?php echo $item->kodePesanan ?>">
+                    <button type="submit">Move to OnProcess</button>
+                </form>
+            </td>
         </tr>
         <br><br>
         <!-- Tambahkan button untuk ubah -->
