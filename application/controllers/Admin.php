@@ -14,9 +14,9 @@ class Admin extends CI_Controller {
         }else{
             $data['waitlist'] = $this->m_admin->get_admin_data('pesanan','statusPesanan','waitlist');
             $data['declined'] = $this->m_admin->get_admin_data('pesanan','statusPesanan','declined');
-            if(empty($data['waitlist'])){
-                show_404();
-            }
+            $data['onprocess'] = $this->m_admin->get_admin_data('pesanan','statusPesanan','onprocess');
+            $data['finished'] = $this->m_admin->get_admin_data('pesanan','statusPesanan','finished');
+
             $this->load->view('admin/admin_header');
             $this->load->view('admin/waitlist', $data);
             $this->load->view('template/footer');
@@ -37,19 +37,6 @@ class Admin extends CI_Controller {
         }
     }
 
-    public function finished(){
-        if(!$this->session->logged_in){
-            redirect('/login');
-        }else{
-            $data['finished'] = $this->m_admin->get_admin_data('pesanan','statusPesanan','finished');
-            if(empty($data['finished'])){
-                show_404();
-            }
-            $this->load->view('admin/admin_header');
-            $this->load->view('admin/finished', $data);
-            $this->load->view('template/footer');
-        }
-    }
 
     public function accept_order(){
         $kodePesanan = $this->input->post('kodePesanan');
@@ -89,7 +76,7 @@ class Admin extends CI_Controller {
 
         $this->db->where('kodePesanan', $kodePesanan);
         $this->db->update('pesanan', $data);
-        redirect('/admin/on_process');
+        redirect('/admin');
     }
 
     public function to_waitlist(){
@@ -113,7 +100,7 @@ class Admin extends CI_Controller {
 
         $this->db->where('kodePesanan', $kodePesanan);
         $this->db->update('pesanan', $data);
-        redirect('/admin/on_process');
+        redirect('/admin');
     }
 
     function logout(){

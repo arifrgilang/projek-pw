@@ -91,12 +91,13 @@ li a {
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+	text-decoration: none;
 }
 
 li a:hover:not(.active) {
     background-color: #6497b1;
-    border-radius: 10px;
+	border-radius: 10px;
+	transition: 0.3s;
 }
 
 .active {

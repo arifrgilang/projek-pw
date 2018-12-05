@@ -13,10 +13,8 @@
 	    <label for="checkbox1">
 			<ul class="menu bar" style="color:#FFFFFF">
                 <li id="admin">Administrator Page</li>
-				<li><a href="<?php echo site_url('/admin/index'); ?>">Wait List</a></li>
-			    <li><a href="<?php echo site_url('/admin/on_process'); ?>">On Process</a></li>
-			    <li><a href="<?php echo site_url('/admin/finished'); ?>">Finished</a></li>  
-				<li><a href="<?php echo site_url('/admin/logout');?>" id="order" style="color: #dbdbdb;">LOGOUT</a></li> 
+				<li style="float:right"><a href="<?php echo site_url('/admin/logout');?>" id="order" class="active" style="color: #dbdbdb;">LOGOUT</a></li> 
+				<li style="float:right"><a href="<?php echo site_url(''); ?>">Main Web</a></li>
 			</ul>
 		</label>
 	</nav>
