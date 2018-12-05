@@ -8,7 +8,7 @@
 		<h2 style="padding-top:25vh">"KNOWLEDGE IS NEVER BE LIMIT"</h2>
   		<h3>We support you to the next level</h3>
 	
-		<a href="#testi"><button class="button" style="vertical-align:middle"><span> testimoni </span></button></a>
+		<a href="#testi"><button class="buttonhome" style="vertical-align:middle"><span> testimoni </span></button></a>
 	</div>
 
 	<div id="testi" class="containerTesti">
