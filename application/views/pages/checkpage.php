@@ -23,11 +23,9 @@
                     echo "<h3>Pesanan masih ada di waiting list</h3>";
                 break;
                 case "finished" :
-                    echo "<h3>Pesanan sudah selesai dikirim</h3>";
-                break;
+                    echo "<h3>Pesanan telah diantar</h3>";
                 default :
-                    echo "<h3>Status pesanan tidak ditemukan</h3>";
-                break;
+                    echo "";
             }
         endforeach; 
         ?>

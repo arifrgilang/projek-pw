@@ -9,13 +9,15 @@ class Pages extends CI_Controller {
     }
 
     public function view($page = 'homepage'){
-        if($page != 'checkpage'){
-            $this->load->view('template/header');
-            $this->load->view('pages/'.$page);
-            $this->load->view('template/footer');
-        } else {
-            redirect('/pages/checkpage');
-        }
+        $this->load->view('template/header');
+        $this->load->view('pages/'.$page);
+        $this->load->view('template/footer');
+    }
+
+    public function orderpage(){
+        $this->load->view('template/header');
+        $this->load->view('pages/orderpage');
+        $this->load->view('template/footer');
     }
 
     public function checkpage(){

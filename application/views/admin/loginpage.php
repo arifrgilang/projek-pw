@@ -1,4 +1,4 @@
-<form method="post" action="<?php echo site_url('login/cek_login') ?>">
+<?php echo form_open('login/cek_login'); ?>
     <div class="containerLogin">
         <div class="kiri">
             <!-- Password -->
