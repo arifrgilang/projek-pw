@@ -29,6 +29,7 @@
     <?php endforeach; ?>
     </table>
     <hr><br>
+    
     <label>Declined</label>
     <table border="1">
         <tr>

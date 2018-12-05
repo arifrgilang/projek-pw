@@ -6,15 +6,14 @@ class Admin extends CI_Controller {
     function __construct(){
         parent::__construct();
         $this->load->model('m_admin');
-        $this->load->model('m_pesanan');
     }
 
     public function index(){
         if(!$this->session->logged_in){
             redirect('/login');
         }else{
-            $data['waitlist'] = $this->m_pesanan->get_wait_list('pesanan','statusPesanan','waitlist');
-            $data['declined'] = $this->m_pesanan->get_wait_list('pesanan','statusPesanan','declined');
+            $data['waitlist'] = $this->m_admin->get_admin_data('pesanan','statusPesanan','waitlist');
+            $data['declined'] = $this->m_admin->get_admin_data('pesanan','statusPesanan','declined');
             if(empty($data['waitlist'])){
                 show_404();
             }
@@ -28,7 +27,7 @@ class Admin extends CI_Controller {
         if(!$this->session->logged_in){
             redirect('/login');
         }else{
-            $data['onprocess'] = $this->m_pesanan->get_wait_list('pesanan','statusPesanan','onprocess');
+            $data['onprocess'] = $this->m_admin->get_admin_data('pesanan','statusPesanan','onprocess');
             if(empty($data['onprocess'])){
                 show_404();
             }
@@ -42,7 +41,7 @@ class Admin extends CI_Controller {
         if(!$this->session->logged_in){
             redirect('/login');
         }else{
-            $data['finished'] = $this->m_pesanan->get_wait_list('pesanan','statusPesanan','finished');
+            $data['finished'] = $this->m_admin->get_admin_data('pesanan','statusPesanan','finished');
             if(empty($data['finished'])){
                 show_404();
             }
