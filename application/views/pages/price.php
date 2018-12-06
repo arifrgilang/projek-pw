@@ -73,7 +73,7 @@
 	<h3 style="text-align:center">Harga Cover</h3>
 
 	<div class="containerprice2">
-		<div>Soft Cover
+		<div> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Soft Cover &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
 			<hr>
 			<table>
 				<tr>
@@ -86,7 +86,7 @@
 				</tr>
 			</table>
 		</div>
-		<div>Hard Cover
+		<div>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hard Cover &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 			<hr>
 			<table>
 				<tr>

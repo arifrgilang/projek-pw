@@ -23,7 +23,7 @@ h1,h2,h3{
 }
 
 h1{
-	font-size:7vw;
+	font-size:5.7vw;
 	text-align: center;
 }
 
@@ -168,9 +168,7 @@ li a:hover:not(.active) {
 	grid-gap: 5%;
 	background-color: rgba(0, 0, 0, 0);
 	padding: 10px;
-	margin-right: 1%;
-	margin-left: 15%;
-	margin-bottom: 8%;
+	margin: auto auto 57vh auto;
 }
 
 .containerTesti > div{
@@ -402,11 +400,13 @@ li a:hover:not(.active) {
 /* ORDER */
 /***************************************************************************************/
 .containerPesan {
-	width: 70%;
-	margin: auto;
+	width: 1000px;
 	background-color: #006666;
 	padding: 20px;
 	border-radius: 5px;
+	display: flex;
+	justify-self: auto; 
+	margin: auto;
 }
 
 .containerPesan > form > div > input {
@@ -420,12 +420,11 @@ li a:hover:not(.active) {
 }
 
 .containerPesan > form > div.kiri {
-	width: 45%;
+	width: 50%;
 }
 
 .containerPesan > form > div.kanan {
-	width: 50%;
-	padding-top: 20px;
+	width: 45%;
 }
 
 .containerPesan > form > div > input#hal {
@@ -433,7 +432,10 @@ li a:hover:not(.active) {
 	margin-left: 10px;
 }
 
-.containerPesan > form > div > label {
+.containerPesan > form > div > label,
+.containerPesan > form > div > div > label,
+#totharga {
+	padding-bottom: 4px;
 	color: #FFFFFF;
 	font-size: 20px;
 }
@@ -446,8 +448,22 @@ li a:hover:not(.active) {
 	width: 100%;
 }
 
-.containerPesan > form > button {
-	justify-items: right;
+#konfirpesan {
+	float: right;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	border: none;
+	color: #006666;
+	text-align: center;
+	font-size: 17px;
+	padding: 15px 15px 15px 15px;
+	width: 200px;
+	cursor: pointer;
+}
+
+.containerPesan > form > div.kanan > div > button,
+.containerPesan > form > div.kanan > div > div > button {
+	float: left;
 	border-radius: 5px;
 	background-color: #FFFFFF;
 	border: none;
@@ -455,10 +471,33 @@ li a:hover:not(.active) {
 	text-align: center;
 	font-size: 17px;
 	padding: 15px;
-	width: 200px;
+	width: 90px;
 	cursor: pointer;
 }
 
+.grid4 {
+	width: 100%;
+	float: right;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 5%;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 0px 0px 20px 20px;
+	border-radius: 5px;
+	margin: auto;
+}
+
+.grid2{
+	width: 100%;
+	float: right;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 1%;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 0px 20px 0px 20px;
+	border-radius: 5px;
+	margin: auto;
+}
 /***************************************************************************************/
 /* LOGIN */
 /***************************************************************************************/

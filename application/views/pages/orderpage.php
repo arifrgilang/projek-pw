@@ -16,52 +16,88 @@
     <label for="link_file">Link File</label> <br>
     <input type="text" name="link_file" placeholder="Masukkan Link File Buku">
     <br>
+    
+    <label for="no_telp">No. Telepon</label> <br>
+    <input type="text" name="no_telp" placeholder="Masukkan No. Telepon">
+    <br>
+
+    <table style="padding-top:20px">
+        <tr>
+            <td><label id="totharga" for="harga">Total Harga</label></td>
+            <td style="width:60%; text-align:right; padding-right:5px"><span id="harga">harga di sini</span></td>
+            <td><button id="konfirpesan" type="submit">Konfirmasi Pembelian</button></td>
+        </tr>
+    </table>
+    
 </div>
 <div class="kanan" id="form_buku" onChange="myFunction()">
     <div class="grid-container">
     <label for="ukuran_kertas">Ukuran Kertas</label>
+    <label for=""></label>
     </div>
-    <br>
+    <div class="grid4">
+        <button value="uk_a4">A4</button>
+        <button value="uk_a5">A5</button>
+        <button value="uk_b4">B4</button>
+        <button value="uk_b5">B5</button>
+    </div>
 
-    <select name="ukuran_kertas" id="uk_kertas">
+    <!-- <select name="ukuran_kertas" id="uk_kertas">
         <option value="uk_a4">A4</option>
         <option value="uk_a5">A5</option>
         <option value="uk_b4">B4</option>
         <option value="uk_b5">B5</option>
     </select>
-    <br>
+    <br> -->
+    
+    <div class="grid-container">
+        <label for="jenis_kertas">Jenis Kertas</label>
+        <label for="jenis_cover">Jenis Cover</label>
+    </div>
+    <div class="grid2">
+        <div class="grid2">
+            <button value="jk_hssd">HSSD9</button>
+            <button value="jk_hvs">HVS</button>
+        </div>
+        <div class="grid2">
+            <button value="5000">Soft Cover</button>
+            <button value="10000">Hard Cover</button>
+        </div>
+    </div>
 
-    <label for="jenis_kertas">Jenis Kertas</label>
-    <select name="jenis_kertas" id="je_kertas">
+    <!-- <select name="jenis_kertas" id="je_kertas">
         <option value="jk_hssd">HSSD</option>
         <option value="jk_hvs">HVS</option>
     </select>
     <br>
-
-    <label for="jenis_cover">Jenis Cover</label> 
+ 
     <select name="jenis_cover" id="je_cover">
         <option value="5000">Soft Cover</option>
         <option value="10000">A5</option>
     </select>
-    <br>
+    <br> -->
+    <div class="grid-container">
+        <label for="kurir">Kurir</label>
+    </div>
+    <div class="grid4">
+        <button value="8000">JNE</button>
+        <button value="5000">Go-Jek</button>
+        <button value="6000">J&T</button>
+        <button value="9000">Tiki</button>
+    </div>
 
-    <label for="kurir">Kurir</label>
-    <select name="kurir" id="kurir">
+    <!-- <select name="kurir" id="kurir">
         <option value="8000">JNE</option>
         <option value="5000">Go-Jek</option>
         <option value="6000">J&T</option>
         <option value="9000">Tiki</option>
-    </select>
+    </select> -->
 
     <label for="jumlah_halaman">Jumlah Halaman</label>
     <input id="hal" type="text" name="jumlah_halaman">
     <br>
 </div>
     
-    <button type="submit">Konfirmasi Pembelian</button>
-    <br>
-    <label for="harga">Total Harga</label>
-    <h5 id="harga"></h5>
 
     
     
