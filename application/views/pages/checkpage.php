@@ -27,6 +27,7 @@
                 default :
                     echo "";
             }
+            break;
         endforeach; 
         ?>
         
