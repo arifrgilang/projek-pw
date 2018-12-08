@@ -53,7 +53,6 @@ class Admin extends CI_Controller {
     public function decline_order(){
         $kodePesanan = $this->input->post('kodePesanan');
 
-
         $data = array(
             'statusPesanan' => 'declined'
         );
@@ -61,10 +60,21 @@ class Admin extends CI_Controller {
         $this->db->where('kodePesanan', $kodePesanan);
         $this->db->update('pesanan', $data);
         redirect('/admin');
+    }
 
-        // $this->db->where('kodePesanan', $kodePesanan);
-        // $this->db->delete('pesanan');
-        // redirect('/admin');
+    public function delete_order(){
+        $kodePesanan = $this->input->post('kodePesanan');
+
+        // $data = array(
+        //     'statusPesanan' => 'deleted'
+        // );
+
+        $this->db->where('kodePesanan', $kodePesanan);
+        $this->db->delete('pesanan');
+
+        $this->db->where('kodePesanan', $kodePesanan);
+        $this->db->delete('pemesan');
+        redirect('/admin');
     }
 
     public function finish_order(){

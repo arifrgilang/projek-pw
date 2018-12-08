@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 05, 2018 at 06:22 PM
+-- Generation Time: Dec 08, 2018 at 10:04 PM
 -- Server version: 10.0.36-MariaDB-0ubuntu0.16.04.1
 -- PHP Version: 7.2.12-1+ubuntu16.04.1+deb.sury.org+1
 
@@ -132,7 +132,7 @@ INSERT INTO `kurir` (`kodeKurir`, `namaKurir`, `biayaKurir`) VALUES
 --
 
 CREATE TABLE `pemesan` (
-  `kodePesanan` varchar(30) NOT NULL DEFAULT '',
+  `kodePesanan` int(11) NOT NULL,
   `namaPemesan` varchar(255) DEFAULT NULL,
   `alamat` varchar(255) DEFAULT NULL,
   `notelp` varchar(30) NOT NULL,
@@ -144,12 +144,7 @@ CREATE TABLE `pemesan` (
 --
 
 INSERT INTO `pemesan` (`kodePesanan`, `namaPemesan`, `alamat`, `notelp`, `linkBuktiBayar`) VALUES
-('p_0001', 'Ewok', 'Cirebon', '083821666111', 'linktest1.com'),
-('p_0002', 'Arif R Gilang', 'Cisaranten Wetan', '083821666100', 'linktest2.com'),
-('p_0003', 'Dani Imron', 'bekasi', '081221696921', 'linktest3.com'),
-('p_0004', 'Miwon', 'Bandung', '081220056355', 'linktest4.com'),
-('p_0005', 'Achun', 'Cirebon', '088363620122', 'linktest5.com'),
-('p_0006', 'Ijut', 'Sukawening', '081220001020', 'linktest6.com');
+(2, 'Arif Rhizky Gilang', 'Jl Cibeunying Kolot No40\r\nKecamatan Coblong Kelurahan Sadang Serang', '083821666100', NULL);
 
 -- --------------------------------------------------------
 
@@ -159,14 +154,14 @@ INSERT INTO `pemesan` (`kodePesanan`, `namaPemesan`, `alamat`, `notelp`, `linkBu
 
 CREATE TABLE `pesanan` (
   `id` int(11) NOT NULL,
-  `kodePesanan` varchar(30) DEFAULT NULL,
-  `kodeCover` varchar(30) DEFAULT NULL,
-  `kodeJenis` varchar(30) DEFAULT NULL,
-  `kodeUkuran` varchar(30) DEFAULT NULL,
-  `kodeKurir` varchar(30) DEFAULT NULL,
-  `jumlahHalaman` int(11) DEFAULT NULL,
-  `hargaTotal` int(11) DEFAULT NULL,
-  `statusPesanan` varchar(255) DEFAULT NULL,
+  `kodePesanan` varchar(30) NOT NULL,
+  `kodeCover` varchar(30) NOT NULL,
+  `kodeJenis` varchar(30) NOT NULL,
+  `kodeUkuran` varchar(30) NOT NULL,
+  `kodeKurir` varchar(30) NOT NULL,
+  `jumlahHalaman` int(11) NOT NULL,
+  `hargaTotal` int(11) NOT NULL,
+  `statusPesanan` varchar(255) NOT NULL,
   `link_file` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -175,11 +170,7 @@ CREATE TABLE `pesanan` (
 --
 
 INSERT INTO `pesanan` (`id`, `kodePesanan`, `kodeCover`, `kodeJenis`, `kodeUkuran`, `kodeKurir`, `jumlahHalaman`, `hargaTotal`, `statusPesanan`, `link_file`) VALUES
-(2, 'p_0002', 'cov_02', 'jk_hssd', 'uk_a5', 'k03', 130, 50000, 'declined', 'file1.com'),
-(3, 'p_0003', 'cov_01', 'jk_hssd', 'uk_a5', 'k03', 200, 70000, 'finished', 'file2.com'),
-(4, 'p_0004', 'cov_01', 'jk_hvs', 'uk_b4', 'k04', 130, 60000, 'finished', 'file3.com'),
-(5, 'p_0005', 'cov_02', 'jk_hvs', 'uk_a4', 'k03', 300, 80000, 'finished', 'file4.com'),
-(6, 'p_0006', 'cov_02', 'jk_hssd', 'uk_a5', 'k03', 300, 75000, 'waitlist', 'file5.com');
+(2, '2', 'cov_01', 'jk_hvs', 'uk_a4', 'k02', 200, 32000, 'waitlist', 'arifrgilang.me');
 
 -- --------------------------------------------------------
 
@@ -241,12 +232,7 @@ ALTER TABLE `pemesan`
 -- Indexes for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `kodePesanan` (`kodePesanan`),
-  ADD KEY `kodeCover` (`kodeCover`),
-  ADD KEY `kodeJenis` (`kodeJenis`),
-  ADD KEY `kodeUkuran` (`kodeUkuran`),
-  ADD KEY `kodeKurir` (`kodeKurir`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `ukuran_kertas`
@@ -259,10 +245,15 @@ ALTER TABLE `ukuran_kertas`
 --
 
 --
+-- AUTO_INCREMENT for table `pemesan`
+--
+ALTER TABLE `pemesan`
+  MODIFY `kodePesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Constraints for dumped tables
 --
@@ -273,16 +264,6 @@ ALTER TABLE `pesanan`
 ALTER TABLE `harga_kertas`
   ADD CONSTRAINT `harga_kertas_ibfk_1` FOREIGN KEY (`kodeJenis`) REFERENCES `jenis_kertas` (`kodeJenis`),
   ADD CONSTRAINT `harga_kertas_ibfk_2` FOREIGN KEY (`kodeUkuran`) REFERENCES `ukuran_kertas` (`kodeUkuran`);
-
---
--- Constraints for table `pesanan`
---
-ALTER TABLE `pesanan`
-  ADD CONSTRAINT `pesanan_ibfk_1` FOREIGN KEY (`kodePesanan`) REFERENCES `pemesan` (`kodePesanan`),
-  ADD CONSTRAINT `pesanan_ibfk_2` FOREIGN KEY (`kodeCover`) REFERENCES `jenis_cover` (`kodeCover`),
-  ADD CONSTRAINT `pesanan_ibfk_3` FOREIGN KEY (`kodeJenis`) REFERENCES `jenis_kertas` (`kodeJenis`),
-  ADD CONSTRAINT `pesanan_ibfk_4` FOREIGN KEY (`kodeUkuran`) REFERENCES `ukuran_kertas` (`kodeUkuran`),
-  ADD CONSTRAINT `pesanan_ibfk_5` FOREIGN KEY (`kodeKurir`) REFERENCES `kurir` (`kodeKurir`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

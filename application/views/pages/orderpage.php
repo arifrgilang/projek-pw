@@ -24,7 +24,11 @@
     <table style="padding-top:20px">
         <tr>
             <td><label id="totharga" for="harga">Total Harga</label></td>
-            <td style="width:60%; text-align:right; padding-right:5px"><span id="harga">harga di sini</span></td>
+            <td style="width:60%; text-align:right; padding-right:5px">
+                <span>Rp.</span>
+                <span style="text-color:#FFFFFF" id="harga"></span>
+                <input type="hidden" id="hargahidden" name="hargahidden" value="">
+            </td>
             <td><button id="konfirpesan" type="submit">Konfirmasi Pembelian</button></td>
         </tr>
     </table>
@@ -37,117 +41,78 @@
     </div>
     <div class="grid4">
         <label class="conrad">
-            <input type="radio" name="uk_ke" id="uk_ke" value="">
+            <input type="radio" name="uk_ke" id="uk_ke" value="uk_a4">
             <span class="radio">A4</span>
         </label>
         <label class="conrad">
-            <input type="radio" name="uk_ke" id="uk_ke" value=""> 
+            <input type="radio" name="uk_ke" id="uk_ke" value="uk_a5"> 
             <span class="radio">A5</span>
         </label>
         <label class="conrad">
-            <input type="radio" name="uk_ke" id="uk_ke" value="">
+            <input type="radio" name="uk_ke" id="uk_ke" value="uk_b4">
             <span class="radio">B4</span>
         </label>
         <label class="conrad">
-            <input type="radio" name="uk_ke" id="uk_ke" value="">
+            <input type="radio" name="uk_ke" id="uk_ke" value="uk_b5">
             <span class="radio">B5</span>
         </label>
-        <!-- <button value="uk_a4">A4</button>
-        <button value="uk_a5">A5</button>
-        <button value="uk_b4">B4</button>
-        <button value="uk_b5">B5</button> -->
     </div>
-
-    <!-- <select name="ukuran_kertas" id="uk_kertas">
-        <option value="uk_a4">A4</option>
-        <option value="uk_a5">A5</option>
-        <option value="uk_b4">B4</option>
-        <option value="uk_b5">B5</option>
-    </select>
-    <br> -->
     
     <div class="grid-container">
         <label for="jenis_kertas">Jenis Kertas</label>
         <label for="jenis_cover">Jenis Cover</label>
     </div>
+
     <div class="grid2">
         <div class="grid2">
             <label class="conrad">
-                <input type="radio" name="je_ke" id="je_ke" value="">
+                <input type="radio" name="je_ke" id="je_ke" value="jk_hssd">
                 <span class="radio">HSSD</span>
             </label>
             <label class="conrad"n >
-                <input type="radio" name="je_ke" id="je_ke" value="">
+                <input type="radio" name="je_ke" id="je_ke" value="jk_hvs">
                 <span class="radio">HVS</span>
             </label>
-            <!-- <button value="jk_hssd">HSSD9</button>
-            <button value="jk_hvs">HVS</button> -->
         </div>
+
         <div class="grid2">
         <label class="conrad">
-            <input type="radio" name="je_co" id="je_co" value="">
+            <input type="radio" name="je_co" id="je_co" value="cov_01">
             <span class="radio">Soft Cover</span>
         </label>
         <label class="conrad">
-            <input type="radio" name="je_co" id="je_co" value="">
+            <input type="radio" name="je_co" id="je_co" value="cov_02">
             <span class="radio">Hard Cover</span>
         </label>
-            <!-- <button value="5000">Soft Cover</button>
-            <button value="10000">Hard Cover</button> -->
         </div>
     </div>
 
-    <!-- <select name="jenis_kertas" id="je_kertas">
-        <option value="jk_hssd">HSSD</option>
-        <option value="jk_hvs">HVS</option>
-    </select>
-    <br>
- 
-    <select name="jenis_cover" id="je_cover">
-        <option value="5000">Soft Cover</option>
-        <option value="10000">A5</option>
-    </select>
-    <br> -->
     <div class="grid-container">
         <label for="kurir">Kurir</label>
     </div>
     <div class="grid4">
         <label class="conrad">
-            <input type="radio" name="kurir" id="kurir" value="8000">
+            <input type="radio" name="kurir" id="kurir" value="k01">
             <span class="radio">JNE</span>
         </label>
         <label class="conrad">
-            <input type="radio" name="kurir" id="kurir" value="5000">
+            <input type="radio" name="kurir" id="kurir" value="k02">
             <span class="radio">Go-Jek</span>
         </label>
         <label class="conrad">
-            <input type="radio" name="kurir" id="kurir" value="6000">
+            <input type="radio" name="kurir" id="kurir" value="k03">
             <span class="radio">J&T</span>
         </label>
         <label class="conrad">
-            <input type="radio" name="kurir" id="kurir" value="9000">
+            <input type="radio" name="kurir" id="kurir" value="k04">
             <span class="radio">Tiki</span>
         </label>
-        <!-- <button value="8000">JNE</button>
-        <button value="5000">Go-Jek</button>
-        <button value="6000">J&T</button>
-        <button value="9000">Tiki</button> -->
     </div>
-
-    <!-- <select name="kurir" id="kurir">
-        <option value="8000">JNE</option>
-        <option value="5000">Go-Jek</option>
-        <option value="6000">J&T</option>
-        <option value="9000">Tiki</option>
-    </select> -->
 
     <label for="jumlah_halaman">Jumlah Halaman</label>
     <input id="hal" type="text" name="jumlah_halaman">
     <br>
 </div>
-    
-
-    
     
     <!-- The Modal -->
     <!-- <div id="myModal" class="modal"> -->
@@ -168,66 +133,127 @@
 <br><br><br> -->
 </div>
 
-<!-- <script>
+<script>
     function myFunction() {
-        var je_cov = document.getElementById("je_cover").value;
-        var je_kertas = document.getElementById("je_kertas").value;
-        var uk_kertas = document.getElementById("uk_kertas").value;
-        var kurir = document.getElementById("kurir").value;
+        var je_cov = document.getElementsByName("je_co");
+        var je_kertas = document.getElementsByName("je_ke");
+        var uk_kertas = document.getElementsByName("uk_ke");
+        var kurir = document.getElementsByName("kurir");
         var hal = document.getElementById("hal").value;
 
         var hargaKertas = 0;
-        var hargaCover = parseInt(je_cov);
-        var hargaKurir = parseInt(kurir);
+        var hargaCover = 0;
+        var hargaKurir = 0;
+        var jenisKertas = 0;
+        var ukuranKertas = 0;
+        // get value, but not converted into integers
+        for(var i = 0; i < je_kertas.length; i++){
+            if(je_kertas[i].checked){
+                hargaKertas = je_kertas[i].value;
+                break;
+            }
+        }
 
-        if(je_kertas == "jk_hssd"){
-            if(uk_kertas == "uk_a4"){
+        for(var i = 0; i < je_cov.length; i++){
+            if(je_cov[i].checked){
+                hargaCover = je_cov[i].value;
+                break;
+            }
+        }
+
+        for(var i = 0; i < kurir.length; i++){
+            if(kurir[i].checked){
+                hargaKurir = kurir[i].value;
+                break;
+            }
+        }
+
+        for(var i = 0; i < je_kertas.length; i++){
+            if(je_kertas[i].checked){
+                jenisKertas = je_kertas[i].value;
+                break;
+            }
+        }
+
+        for(var i = 0; i < uk_kertas.length; i++){
+            if(uk_kertas[i].checked){
+                ukuranKertas = uk_kertas[i].value;
+                break;
+            }
+        }
+
+        if(jenisKertas == "jk_hssd"){
+            if(ukuranKertas == "uk_a4"){
                 hargaKertas = 150;
-            } else if (uk_kertas == "uk_a5"){
+            } else if (ukuranKertas == "uk_a5"){
                 hargaKertas = 80;
-            } else if (uk_kertas == "uk_b4"){
+            } else if (ukuranKertas == "uk_b4"){
                 hargaKertas = 150;
-            } else if (uk_kertas == "uk_b5"){
+            } else if (ukuranKertas == "uk_b5"){
                 hargaKertas = 80;
             }
-        } else if (je_kertas == "jk_hvs"){
-            if(uk_kertas == "uk_a4"){
+        } else if (jenisKertas == "jk_hvs"){
+            if(ukuranKertas == "uk_a4"){
                 hargaKertas = 110;
-            } else if (uk_kertas == "uk_a5"){
+            } else if (ukuranKertas == "uk_a5"){
                 hargaKertas = 60;
-            } else if (uk_kertas == "uk_b4"){
+            } else if (ukuranKertas == "uk_b4"){
                 hargaKertas = 110;
-            } else if (uk_kertas == "uk_b5"){
+            } else if (ukuranKertas == "uk_b5"){
                 hargaKertas = 60;
             }
         }
-        var totalHarga = (parseInt(hal) * hargaKertas) + hargaCover + hargaKurir;
-        // document.getElementById("harga").innerHTML = je_cov + je_kertas + uk_kertas + kurir + hal;
-        document.getElementById("harga").innerHTML = parseInt(hal) * hargaKertas + hargaCover + hargaKurir  ;
+        
+        switch(hargaKurir){
+            case "k01":
+                hargaKurir = 8000;
+                break;
+            case "k02":
+                hargaKurir = 5000;
+                break;
+            case "k03":
+                hargaKurir = 6000;
+                break;
+            case "k04":
+                hargaKurir = 9000;
+                break;
+            default:
+                break;
+        }
+        
+        if(hargaCover == "cov_01"){
+            hargaCover = 5000;
+        } else {
+            hargaCover = 10000;
+        }
+
+        var tot = parseInt(hal) * hargaKertas + hargaCover + hargaKurir;
+        document.getElementById('hargahidden').value = String(tot);
+        document.getElementById("harga").innerHTML = tot;
     }
-// Get the modal
-var modal = document.getElementById('myModal');
+// // Get the modal
+// var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+// // Get the button that opens the modal
+// var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+// // When the user clicks the button, open the modal 
+// btn.onclick = function() {
+//     modal.style.display = "block";
+// }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script> -->
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+</script>
