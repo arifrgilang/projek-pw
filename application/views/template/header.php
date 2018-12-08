@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>POOKS</title>
-	<meta name ="viewport" content="width=device, initial-scale=1, user-scalable=no">
+	<meta name ="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link href="<?php echo base_url("/assets/style/style.css")?>" type="text/css" rel="stylesheet">
 	<script src="<?php echo base_url("/assets/js/javascript.js")?>" type="text/javascript"></script>
 </head>

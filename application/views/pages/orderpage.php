@@ -36,10 +36,26 @@
     <label for=""></label>
     </div>
     <div class="grid4">
-        <button value="uk_a4">A4</button>
+        <label class="conrad">
+            <input type="radio" name="uk_ke" id="uk_ke" value="">
+            <span class="radio">A4</span>
+        </label>
+        <label class="conrad">
+            <input type="radio" name="uk_ke" id="uk_ke" value=""> 
+            <span class="radio">A5</span>
+        </label>
+        <label class="conrad">
+            <input type="radio" name="uk_ke" id="uk_ke" value="">
+            <span class="radio">B4</span>
+        </label>
+        <label class="conrad">
+            <input type="radio" name="uk_ke" id="uk_ke" value="">
+            <span class="radio">B5</span>
+        </label>
+        <!-- <button value="uk_a4">A4</button>
         <button value="uk_a5">A5</button>
         <button value="uk_b4">B4</button>
-        <button value="uk_b5">B5</button>
+        <button value="uk_b5">B5</button> -->
     </div>
 
     <!-- <select name="ukuran_kertas" id="uk_kertas">
@@ -56,12 +72,28 @@
     </div>
     <div class="grid2">
         <div class="grid2">
-            <button value="jk_hssd">HSSD9</button>
-            <button value="jk_hvs">HVS</button>
+            <label class="conrad">
+                <input type="radio" name="je_ke" id="je_ke" value="">
+                <span class="radio">HSSD</span>
+            </label>
+            <label class="conrad"n >
+                <input type="radio" name="je_ke" id="je_ke" value="">
+                <span class="radio">HVS</span>
+            </label>
+            <!-- <button value="jk_hssd">HSSD9</button>
+            <button value="jk_hvs">HVS</button> -->
         </div>
         <div class="grid2">
-            <button value="5000">Soft Cover</button>
-            <button value="10000">Hard Cover</button>
+        <label class="conrad">
+            <input type="radio" name="je_co" id="je_co" value="">
+            <span class="radio">Soft Cover</span>
+        </label>
+        <label class="conrad">
+            <input type="radio" name="je_co" id="je_co" value="">
+            <span class="radio">Hard Cover</span>
+        </label>
+            <!-- <button value="5000">Soft Cover</button>
+            <button value="10000">Hard Cover</button> -->
         </div>
     </div>
 
@@ -80,10 +112,26 @@
         <label for="kurir">Kurir</label>
     </div>
     <div class="grid4">
-        <button value="8000">JNE</button>
+        <label class="conrad">
+            <input type="radio" name="kurir" id="kurir" value="8000">
+            <span class="radio">JNE</span>
+        </label>
+        <label class="conrad">
+            <input type="radio" name="kurir" id="kurir" value="5000">
+            <span class="radio">Go-Jek</span>
+        </label>
+        <label class="conrad">
+            <input type="radio" name="kurir" id="kurir" value="6000">
+            <span class="radio">J&T</span>
+        </label>
+        <label class="conrad">
+            <input type="radio" name="kurir" id="kurir" value="9000">
+            <span class="radio">Tiki</span>
+        </label>
+        <!-- <button value="8000">JNE</button>
         <button value="5000">Go-Jek</button>
         <button value="6000">J&T</button>
-        <button value="9000">Tiki</button>
+        <button value="9000">Tiki</button> -->
     </div>
 
     <!-- <select name="kurir" id="kurir">
@@ -120,7 +168,7 @@
 <br><br><br> -->
 </div>
 
-<script>
+<!-- <script>
     function myFunction() {
         var je_cov = document.getElementById("je_cover").value;
         var je_kertas = document.getElementById("je_kertas").value;
@@ -182,4 +230,4 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-</script>
+</script> -->

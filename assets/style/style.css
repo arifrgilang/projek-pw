@@ -475,6 +475,11 @@ li a:hover:not(.active) {
 	cursor: pointer;
 }
 
+.containerPesan > form > div.kanan > div > button:hover,
+.containerPesan > form > div.kanan > div > div > button:hover{
+	background-color: #6497b1;
+}
+
 .grid4 {
 	width: 100%;
 	float: right;
@@ -489,15 +494,91 @@ li a:hover:not(.active) {
 
 .grid2{
 	width: 100%;
-	float: right;
+	/* float: right; */
 	display: grid;
 	grid-template-columns: auto auto;
-	grid-gap: 1%;
+	grid-gap: 5%;
 	background-color: rgba(0, 0, 0, 0);
 	padding: 0px 20px 0px 20px;
 	border-radius: 5px;
 	margin: auto;
 }
+
+/* Radio */
+
+/* The container */
+.conrad {
+    display: block;
+    padding-left: 0px;
+	margin-bottom: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+	background-color: #000;
+}
+
+/* Hide the browser's default radio button */
+.conrad input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio {
+    position: absolute;
+	width: 60px;
+	padding: 15px;
+    background-color: #eee;
+	border-radius: 5px;
+	font-size: 17px;
+	color: #006666;
+	text-align: center;
+	transition: 0.2s;
+	
+}
+
+/* On mouse-over, add a grey background color */
+.conrad:hover input ~ .radio {
+	background-color: #6497b1;
+	color: #FFFFFF;
+	transition: 0.2s;
+}
+
+/* When the radio button is checked, add a blue background */
+.conrad input:checked ~ .radio {
+	background-color: #6497b1;
+	color: #FFFFFF;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.conrad input:checked ~ .radio:after {
+    display: block;
+}
+
+label.conrad {
+	font-weight: normal;
+}
+/* Style the indicator (dot/circle)
+.conrad .radio:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+} */
+
+
 /***************************************************************************************/
 /* LOGIN */
 /***************************************************************************************/
