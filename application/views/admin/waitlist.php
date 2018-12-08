@@ -1,52 +1,15 @@
-<style>
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-</style>
-
-<div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'Waitlist')" id="defaultOpen">Wait List</button>
-    <button class="tablinks" onclick="openTab(event, 'OnProcess')" id="defaultOpen2">On Process</button>
+<div class="gridtab">
+<div class="waittab">
+    <button class="tablinks" onclick="openTab(event, 'Waitlist')" id="defaultOpen">Wait List</button><br>
+    <button class="tablinks" onclick="openTab(event, 'OnProcess')" id="defaultOpen2">On Process</button><br>
     <button class="tablinks" onclick="openTab(event, 'Finished')" id="defaultOpen3">Finished</button>
 </div>
 
+<div class="waitkanan">
 <!-- KONTEN WAITLIST -->
 <div id="Waitlist" class="tabcontent">
-    <div style="width:80%;margin:auto">
+    <div>
+        <br>
         <label>Waiting to be accepted</label>
             <table border="1">
                 <tr>
@@ -61,19 +24,20 @@
                     <td>
                         <?php echo form_open('admin/accept_order'); ?>
                             <input type="hidden" name="kodePesanan" value="<?php echo $item->kodePesanan ?>">
-                            <button type="submit">Accept</button>
+                            <button class="button1" type="submit">Accept</button>
                         </form>
                     </td>
                     <td>
                         <?php echo form_open('admin/decline_order'); ?>
                             <input type="hidden" name="kodePesanan" value="<?php echo $item->kodePesanan ?>">
-                            <button type="submit">Decline</button>
+                            <button class="button1" type="submit">Decline</button>
                         </form>
                     </td>
                 </tr>
                 <br><br>
             <?php endforeach; ?>
             </table>
+            <br>
             <hr><br>
 
             <label>Declined</label>
@@ -90,7 +54,7 @@
                     <td>
                         <?php echo form_open('admin/to_waitlist'); ?>
                             <input type="hidden" name="kodePesanan" value="<?php echo $item->kodePesanan ?>">
-                            <button type="submit">Undo Decline</button>
+                            <button class="button1" type="submit">Undo Decline</button>
                         </form>
                     </td>
                 </tr>
@@ -99,12 +63,16 @@
                 <!-- Tambahkan button untuk ubah -->
             <?php endforeach; ?>
             </table>
+            <br>
+            <hr>
     </div>
 </div>
 
 <!-- KONTEN ONPROCESS -->
 <div id="OnProcess" class="tabcontent">
-    <div style="width:80%;margin:auto">
+    <div >
+        <br>
+        <label>OnProcess</label>
         <table border="1">
             <tr>
                 <th>Kode Pesanan</th> <th>Kode Kurir</th> <th>Jumlah Hal</th> <th>Harga Total</th>
@@ -118,7 +86,7 @@
                 <td>
                     <?php echo form_open('admin/finish_order'); ?>
                         <input type="hidden" name="kodePesanan" value="<?php echo $item->kodePesanan ?>">
-                        <button type="submit">Complete Order</button>
+                        <button class="button1" type="submit">Complete Order</button>
                     </form>
                 </td>
             </tr>
@@ -127,13 +95,16 @@
             <!-- Tambahkan button untuk ubah -->
         <?php endforeach; ?>
         </table>
+        <br><hr>
     </div>
 
 </div>
 
 <!-- KONTEN FINISHED -->
 <div id="Finished" class="tabcontent">
-    <div style="width:80%;margin:auto">
+    <div >
+        <br>
+        <label>Finished</label>
         <table border="1">
             <tr>
                 <th>Kode Pesanan</th> <th>Kode Kurir</th> <th>Jumlah Hal</th> <th>Harga Total</th>
@@ -147,24 +118,28 @@
                 <td>
                     <?php echo form_open('admin/to_waitlist'); ?>
                         <input type="hidden" name="kodePesanan" value="<?php echo $item->kodePesanan ?>">
-                        <button type="submit">Move to Waitlist</button>
+                        <button class="button1" type="submit">Move to Waitlist</button>
                     </form>
                 </td>
                 <td>
                     <?php echo form_open('admin/to_waitlist'); ?>
                         <input type="hidden" name="kodePesanan" value="<?php echo $item->kodePesanan ?>">
-                        <button type="submit">Move to OnProcess</button>
+                        <button class="button1" type="submit">Move to OnProcess</button>
                     </form>
                 </td>
             </tr>
-            <br><br>
+            <br>
             <!-- Tambahkan button untuk ubah -->
             <!-- Tambahkan button untuk ubah -->
         <?php endforeach; ?>
         </table>
+        <hr>
+        <br>
 </div>
 
 </div>
+</div>
+
 
 <script>
 function openTab(evt, tabName) {
