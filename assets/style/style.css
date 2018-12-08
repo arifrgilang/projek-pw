@@ -400,7 +400,7 @@ li a:hover:not(.active) {
 /* ORDER */
 /***************************************************************************************/
 .containerPesan {
-	width: 1000px;
+	width: 850px;
 	background-color: #006666;
 	padding: 20px;
 	border-radius: 5px;
@@ -499,7 +499,7 @@ li a:hover:not(.active) {
 	grid-template-columns: auto auto;
 	grid-gap: 5%;
 	background-color: rgba(0, 0, 0, 0);
-	padding: 0px 20px 0px 20px;
+	padding: 0px 0px 20px 0px;
 	border-radius: 5px;
 	margin: auto;
 }
@@ -516,7 +516,7 @@ li a:hover:not(.active) {
     -moz-user-select: none;
     -ms-user-select: none;
 	user-select: none;
-	background-color: #000;
+	/* background-color: #000; */
 }
 
 /* Hide the browser's default radio button */
@@ -531,13 +531,12 @@ li a:hover:not(.active) {
     position: absolute;
 	width: 60px;
 	padding: 15px;
-    background-color: #eee;
+    background-color: #FFFFFF;
 	border-radius: 5px;
 	font-size: 17px;
 	color: #006666;
 	text-align: center;
 	transition: 0.2s;
-	
 }
 
 /* On mouse-over, add a grey background color */
