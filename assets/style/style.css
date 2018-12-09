@@ -581,23 +581,138 @@ label.conrad {
 /***************************************************************************************/
 /* LOGIN */
 /***************************************************************************************/
-.containerLogin {
-	padding-top: 25vh;
-	width: 40vw;
-	background-color: #595959;
-	margin: auto;
-}
-
-.containerLogin > div {
+.judul{
+	margin:2%;
+	padding-top: 10%;
 	text-align: center;
-	width: max-content;
-	margin: auto;
+	background-color: #006666;
+	color: white;
+}
+.kirilogin{
+	margin:2%;
+	padding-top: 2%;
+	text-align: center;
+	color: #006666;
+	background-color: #006666;
 }
 
-#password {
-	width:15vw;
-	font-size: 20px;
+#password{
 	border-radius: 5px;
+	padding: 16px 60px;
+}
+.kananlogin{
+	margin:2%;
+	padding-top: 2%;
+	text-align: center;
+	background-color: #006666;
+}
+.containerLogin{
+	margin-top: 5%;
+	margin-left: 35%;
+	margin-bottom: 5%;
+	width: 30%;
+	float:center;
+	background-color: white;
+	border-style: solid;
+	border-color: #006666;
+	border-radius: 10px;
+	opacity: 0.9;
+}
+
+.containerLogin > div{
+	width: 100%;
+	float:center;
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 10%;
+	padding-bottom: 50px;
+	margin: auto;
+	justify-content: center;
+}
+
+.buttonlogin {
+  background-color: white; 
+  border: none;
+  color: #006666;
+  padding: 16px 120px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 10px;
+  width:100%;
+}
+
+.buttonlogin:hover {
+  background-color: #006666;
+  color: white;
+}
+
+/***************************************************************************************/
+/* WAITLIST */
+/***************************************************************************************/
+.tablinks {
+  background-color: #006666; 
+  border: none;
+  color: white;
+  padding: 16px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid white;
+  width:100%;
+}
+
+.tablinks:hover {
+  background-color: white;
+  color: #006666;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #006666;
+  color: white;
+}
+
+.button1 {
+  background-color: white; 
+  border: none;
+  color: #006666;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 10px;
+  width:100%;
+}
+
+.button1:hover {
+  background-color: #006666;
+  color: white;
 }
 
 /***************************************************************************************/

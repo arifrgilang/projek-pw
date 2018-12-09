@@ -4,12 +4,13 @@
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #006666;
+    border-radius: 10px;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-    background-color: inherit;
+    background-color: #006666;
     float: left;
     border: none;
     outline: none;
@@ -27,6 +28,7 @@
 /* Create an active/current tablink class */
 .tab button.active {
     background-color: #ccc;
+    color:#006666;
 }
 
 /* Style the tab content */
@@ -82,6 +84,7 @@
             <hr><br>
 
             <label>Declined</label>
+            <br><br>
             <table border="1">
                 <tr>
                     <th>Kode Pesanan</th> <th>Kode Kurir</th> <th>Jumlah Hal</th> <th>Harga Total</th> <th>Link File</th>
@@ -102,7 +105,7 @@
                     <td>
                         <?php echo form_open('admin/delete_order'); ?>
                             <input type="hidden" name="kodePesanan" value="<?php echo $item->kodePesanan ?>">
-                            <button type="submit">Delete Order</button>
+                            <button class="button1"type="submit">Delete Order</button>
                         </form>
                     </td>
                 </tr>
@@ -121,6 +124,7 @@
     <div >
         <br>
         <label>OnProcess</label>
+        <br><br>
         <table border="1">
             <tr>
                 <th>Kode Pesanan</th> <th>Kode Kurir</th> <th>Jumlah Hal</th> <th>Harga Total</th>
@@ -153,6 +157,7 @@
     <div >
         <br>
         <label>Finished</label>
+        <br><br>
         <table border="1">
             <tr>
                 <th>Kode Pesanan</th> <th>Kode Kurir</th> <th>Jumlah Hal</th> <th>Harga Total</th>
