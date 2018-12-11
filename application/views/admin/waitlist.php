@@ -53,12 +53,12 @@
     <div>
         <br>
         <label>Waiting to be accepted</label>
-            <table border="1">
-                <tr>
+            <table class="waitTable" >
+                <tr class="wrow"> 
                     <th>Kode Pesanan</th> <th>Kode Kurir</th> <th>Jumlah Hal</th> <th>Harga Total</th> <th>Link File</th>
                 </tr>
             <?php foreach ($waitlist->result() as $item) : ?>
-                <tr>
+                <tr class="wrows">
                     <td><?php echo $item->kodePesanan ?></td>
                     <td><?php echo $item->kodeKurir ?></td>
                     <td><?php echo $item->jumlahHalaman ?></td>
@@ -85,12 +85,12 @@
 
             <label>Declined</label>
             <br><br>
-            <table border="1">
-                <tr>
+            <table class="waitTable">
+                <tr class="wrow">
                     <th>Kode Pesanan</th> <th>Kode Kurir</th> <th>Jumlah Hal</th> <th>Harga Total</th> <th>Link File</th>
                 </tr>
             <?php foreach ($declined->result() as $item) : ?>
-                <tr>
+                <tr class="wrows">
                     <td><?php echo $item->kodePesanan ?></td>
                     <td><?php echo $item->kodeKurir ?></td>
                     <td><?php echo $item->jumlahHalaman ?></td>
@@ -125,12 +125,12 @@
         <br>
         <label>OnProcess</label>
         <br><br>
-        <table border="1">
-            <tr>
+        <table class="waitTable">
+            <tr class="wrow">
                 <th>Kode Pesanan</th> <th>Kode Kurir</th> <th>Jumlah Hal</th> <th>Harga Total</th>
             </tr>
         <?php foreach ($onprocess->result() as $item) : ?>
-            <tr>
+            <tr class="wrows">
                 <td><?php echo $item->kodePesanan ?></td>
                 <td><?php echo $item->kodeKurir ?></td>
                 <td><?php echo $item->jumlahHalaman ?></td>
@@ -158,12 +158,12 @@
         <br>
         <label>Finished</label>
         <br><br>
-        <table border="1">
-            <tr>
+        <table class="waitTable">
+            <tr class="wrow">
                 <th>Kode Pesanan</th> <th>Kode Kurir</th> <th>Jumlah Hal</th> <th>Harga Total</th>
             </tr>
         <?php foreach ($finished->result() as $item) : ?>
-            <tr>
+            <tr class="wrows">
                 <td><?php echo $item->kodePesanan ?></td>
                 <td><?php echo $item->kodeKurir ?></td>
                 <td><?php echo $item->jumlahHalaman ?></td>

@@ -20,11 +20,11 @@
 			<hr>
 			<table>
 				<tr>
-					<td>HVS(per hlm)</td>
+					<td>HVS (per hlm)</td>
 					<td class="harga">Rp.60,-</td>
 				</tr>
 				<tr>
-					<td>HSSD(per hlm)</td>
+					<td>HSSD (per hlm)</td>
 					<td class="harga">Rp.80,-</td>
 				</tr>
 			</table>
@@ -33,11 +33,11 @@
 			<hr>
 			<table>
 				<tr>
-					<td>HVS(per hlm)</td>
+					<td>HVS (per hlm)</td>
 					<td class="harga">Rp.110,-</td>
 				</tr>
 				<tr>
-					<td>HSSD(per hlm)</td>
+					<td>HSSD (per hlm)</td>
 					<td class="harga">Rp.150,-</td>
 				</tr>
 			</table>
@@ -46,11 +46,11 @@
 			<hr>
 			<table>
 				<tr>
-					<td>HVS(per hlm)</td>
+					<td>HVS (per hlm)</td>
 					<td class="harga">Rp.110,-</td>
 				</tr>
 				<tr>
-					<td>HSSD(per hlm)</td>
+					<td>HSSD (per hlm)</td>
 					<td class="harga">Rp.150,-</td>
 				</tr>
 			</table>
@@ -59,11 +59,11 @@
 			<hr>
 			<table>
 				<tr>
-					<td>HVS(per hlm)</td>
+					<td>HVS (per hlm)</td>
 					<td class="harga">Rp.60,-</td>
 				</tr>
 				<tr>
-					<td>HSSD(per hlm)</td>
+					<td>HSSD (per hlm)</td>
 					<td class="harga">Rp.80,-</td>
 				</tr>
 			</table>
@@ -80,7 +80,7 @@
 					<td>BW</td>
 					<td class="harga">Rp.10.000,-</td>
 				</tr>
-				<tr>
+				<tr class="tr2">
 					<td>Warna</td>
 					<td class="harga">Rp.15.000,-</td>
 				</tr>

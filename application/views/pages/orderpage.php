@@ -23,10 +23,10 @@
 
     <table style="padding-top:20px">
         <tr>
-            <td><label id="totharga" for="harga">Total Harga</label></td>
-            <td style="width:60%; text-align:right; padding-right:5px">
-                <span>Rp.</span>
-                <span style="text-color:#FFFFFF" id="harga"></span>
+            <td><label class="totharga" for="harga">Total Harga</label></td>
+            <td style="width:150px; text-align:right; padding-right:5px">
+                <span class="totharga">Rp.</span>
+                <span class="totharga" id="harga"></span>
                 <input type="hidden" id="hargahidden" name="hargahidden" value="">
             </td>
             <td><button id="konfirpesan" type="submit">Konfirmasi Pembelian</button></td>
