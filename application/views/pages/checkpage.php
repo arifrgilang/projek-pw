@@ -2,9 +2,9 @@
         <h1 class="titleCP">
             Cek Pesanan
         </h1>
-
+        <h3>Masukkan kode pesanan Anda</h3>
         <?php echo form_open('pages/checkpage'); ?>
-            <input type="text" id="kodPes" name="kodPes"> <br>
+            <input type="text" id="kodPes" name="kodPes"> <br><br>
             <button type="submit" class="button">Cek Pesanan</button>
         </form>
         <br><br><br><br>

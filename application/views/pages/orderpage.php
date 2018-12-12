@@ -6,20 +6,20 @@
 <?php echo form_open('pages/order'); ?>
 
 <div class="kiri">    
-    <label for="nama">Nama</label> <br>
-    <input type="text" name="nama" placeholder="Masukkan Nama Lengkap"> <br>
+    <label for="nama">Nama</label> <br><hr>
+    <input type="text" name="nama" placeholder="Masukkan Nama Lengkap"> <br><br>
 
-    <label for="alamat">Alamat</label> <br>
+    <label for="alamat">Alamat</label> <br><hr>
     <textarea name="alamat" placeholder="Masukkan Alamat" rows="3"></textarea>
-    <br>
+    <br><br>
 
-    <label for="link_file">Link File</label> <br>
+    <label for="link_file">Link File</label> <br><hr>
     <input type="text" name="link_file" placeholder="Masukkan Link File Buku">
-    <br>
+    <br><br>
     
-    <label for="no_telp">No. Telepon</label> <br>
+    <label for="no_telp">No. Telepon</label> <br><hr>
     <input type="text" name="no_telp" placeholder="Masukkan No. Telepon">
-    <br>
+    <br><br>
 
     <table style="padding-top:20px">
         <tr>
@@ -36,7 +36,7 @@
 </div>
 <div class="kanan" id="form_buku" onChange="myFunction()">
     <div class="grid-container">
-    <label for="ukuran_kertas">Ukuran Kertas</label>
+    <label for="ukuran_kertas">Ukuran Kertas</label><br><br>
     <label for=""></label>
     </div>
     <div class="grid4">
@@ -60,7 +60,7 @@
     
     <div class="grid-container">
         <label for="jenis_kertas">Jenis Kertas</label>
-        <label for="jenis_cover">Jenis Cover</label>
+        <label for="jenis_cover">Jenis Cover</label><br>
     </div>
 
     <div class="grid2">
@@ -88,7 +88,8 @@
     </div>
 
     <div class="grid-container">
-        <label for="kurir">Kurir</label>
+        <label for="kurir">Kurir</label><br>
+        <br>
     </div>
     <div class="grid4">
         <label class="conrad">
